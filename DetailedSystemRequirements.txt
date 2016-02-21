@@ -1,0 +1,61 @@
+Detailed System Requirements:
+
+USER (INTERFACE)
+-The system has users like administrators, teachers, tutors and students. 
+
+      Administrators:
+        --can manage the system: 
+            *adding users, 
+            *removing users,
+            *adding courses, 
+            *removing courses.
+        
+      Teachers: 
+        --can manage courses:
+            *adding students 
+            *removing students,
+            *adding tutors,
+            *removing tutors,
+            *adding documents,
+            *removing documents.        
+        --can give assignments. 
+        --can manage multiple course in a course term.
+        --can view older courses but cannot make any changes. 
+      
+      Tutors:
+        --can view older courses but cannot make any changes.
+        --only can view their course materials and assignments. 
+        --can be a student in a different course.
+        
+      Students:
+        --Register into system
+        --can upload assignments. 
+        --can view grades and lecture notes.
+      
+COURSE (INTERFACE)    
+        
+DOCUMENT (INTERFACE)
+-The document can be in different formats like books, files, slides, urls and whiteboard descriptions.
+      Books
+      Files
+      Slides
+      Urls
+      Whiteboard descriptions
+
+ASSIGNMENTS (INTERFACE)
+-Assignments can be in different formats like quiz, homework or group project.
+      
+      Quiz:
+        --has a deadline,
+        --has a late deadline.
+      
+      Homework:
+        --has a deadline,
+        --has a late deadline.
+      
+      Group Project:
+        --has a deadline,
+        --has a late deadline.
+        
+        
+        
