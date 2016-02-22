@@ -1,0 +1,261 @@
+Course Automation System has 5 interfaces. System interface, User interface, Course interface, Document interface, Assignment interface.
+
+Interfaces in the Course Automation System:
+
+------------------------------------------------------------------------------------
+
+public interface System {
+
+    /**
+     * Set Users ArrayList.
+     * İf the Users ArrayList already set, then Users ArrayList reset.
+     */
+    void setUsersArrayList();
+
+    /**
+     * Get Users ArrayList
+     *
+     * @return Users ArrayList in the System
+     */
+    ArrayList<User> getUsersArrayList();
+
+    /**
+     * User Register to System.
+     * Add element into Users ArrayList.
+     */
+    void userRegister();
+
+}//end interface System
+
+------------------------------------------------------------------------------------
+
+public interface User {
+
+    /**
+     * Set Course Automation System
+     *
+     * @param newCourse new Course Automation System
+     */
+    void setCourseAutomationSystem(Course newCourse);
+
+    /**
+     * Get Course Automation System
+     *
+     * @return Course Automation System
+     */
+    Course getCourseAutomationSystem();
+
+    /**
+     * Set User's new username
+     *
+     * @param newUsername User's new username
+     */
+    void setUsername(String newUsername);
+
+    /**
+     * Get Username
+     *
+     * @return User's username
+     */
+    String getUsername();
+
+    /**
+     * Set new Password
+     *
+     * @param newPassword User's new Password
+     */
+    void setPassword(String newPassword);
+
+    /**
+     * Get User's Password
+     *
+     * @return User's Password
+     */
+    String getPassword();
+
+    /**
+     * Login into Course Automation System.
+     * User can not do anything until login.
+     */
+    void loginIntoSystem();
+
+    /**
+     * Logout into Course Automation System.
+     */
+    void logoutIntoSystem();
+
+    /**
+     * Set Courses ArrayList.
+     * İf the Courses ArrayList already set, then Courses ArrayList reset.
+     */
+    void setCoursesArrayList();
+
+    /**
+     * Get Courses ArrayList
+     *
+     * @return Courses ArrayList in the System
+     */
+    ArrayList<Course> getCoursesArrayList();
+
+    /**
+     * Set Old Courses ArrayList.
+     * İf the Old Courses ArrayList already set, then Old Courses ArrayList reset.
+     */
+    void setOldCoursesArrayList();
+
+    /**
+     * Get Old Courses ArrayList
+     *
+     * @return Old Courses ArrayList in the System
+     */
+    ArrayList<Course> getOldCoursesArrayList();
+
+}//end interface User
+
+------------------------------------------------------------------------------------
+
+public interface Course {
+
+    /**
+     * Set Course Name
+     *
+     * @param newCourseName Course's new name
+     */
+    void setCourseName(String newCourseName);
+
+    /**
+     * Get Course Name
+     *
+     * @return Course's name
+     */
+    String getCourseName();
+
+    /**
+     * Set Documents ArrayList.
+     * İf the Documents ArrayList already set, then Documents ArrayList reset.
+     */
+    void setDocumentsArrayList();
+
+    /**
+     * Get Documents ArrayList
+     *
+     * @return Documents ArrayList in the System
+     */
+    ArrayList<Document> getDocumentsArrayList();
+
+    /**
+     * Set Assignments ArrayList
+     * İf the Assignments ArrayList already set, then Assignments ArrayList reset.
+     */
+    void setAssignmentsArrayList();
+
+    /**
+     * Get Assignments ArrayList
+     *
+     * @return Assignments ArrayList in the System
+     */
+    ArrayList<Assignment> getAssignmentsArrayList();
+
+}//end interface Course
+
+------------------------------------------------------------------------------------
+
+public interface Document {
+
+    /**
+     * Set Document Name
+     *
+     * @param newDocumentName Document's new name
+     */
+    void setDocumentName(String newDocumentName);
+
+    /**
+     * Get Document Name
+     *
+     * @return Document's name
+     */
+    String getDocumentName();
+
+}//end interface Document
+
+------------------------------------------------------------------------------------
+
+public interface Assignment {
+
+    /**
+     * Set Assignment Name
+     *
+     * @param newAssignmentName Assignment's new name
+     */
+    void setAssignmentName(String newAssignmentName);
+
+    /**
+     * Get Assignment Name
+     *
+     * @return Assignment's name
+     */
+    String getAssignmentName();
+
+    /**
+     * Set Deadline Time
+     *
+     * @param newDay Deadline Time's new Day
+     * @param newMonth Deadline Time's new Month
+     * @param newYear Deadline Time's new Year
+     */
+    void setDeadlineTime(int newDay, int newMonth, int newYear);
+
+    /**
+     * Get Deadline Time's Day
+     *
+     * @return Deadline Time's Day
+     */
+    int getDeadlineTimeDay();
+
+    /**
+     * Get Deadline Time's Month
+     *
+     * @return Deadline Time's Month
+     */
+    int getDeadlineTimeMonth();
+
+    /**
+     * Get Deadline Time's Year
+     *
+     * @return Deadline Time's Year
+     */
+    int getDeadlineTimeYear();
+
+    /**
+     * Set LateDeadline Time
+     *
+     * @param newDay LateDeadline Time's new Day
+     * @param newMonth LateDeadline Time's new Month
+     * @param newYear LateDeadline Time's new Year
+     */
+    void setLateDeadlineTime(int newDay, int newMonth, int newYear);
+
+    /**
+     * Get LateDeadline Time's Day
+     *
+     * @return LateDeadline Time's Day
+     */
+    int getLateDeadlineTimeDay();
+
+    /**
+     * Get LateDeadline Time's Month
+     *
+     * @return LateDeadline Time's Month
+     */
+    int getLateDeadlineTimeMonth();
+
+    /**
+     * Get LateDeadline Time's Year
+     *
+     * @return LateDeadline Time's Year
+     */
+    int getLateDeadlineTimeYear();
+
+}////end interface Assignment
+
+------------------------------------------------------------------------------------
