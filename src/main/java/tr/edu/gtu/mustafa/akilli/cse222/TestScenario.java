@@ -23,5 +23,6 @@ public class TestScenario {
     public static void main( String[] args )
     {
         System.out.println( "Test Scenario will be here" );
-    }
-}
+    }// end method main
+
+}// end class TestScenario
