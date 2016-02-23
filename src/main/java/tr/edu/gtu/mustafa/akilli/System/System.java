@@ -18,22 +18,107 @@ import java.util.ArrayList;
 public interface System {
 
     /**
-     * Set Users ArrayList.
-     * İf the Users ArrayList already set, then Users ArrayList reset.
-     */
-    void setUsersArrayList();
-
-    /**
-     * Get Users ArrayList
+     * Get Administrator
      *
-     * @return Users ArrayList in the System
+     * @return Admin of the System
      */
-    ArrayList<User> getUsersArrayList();
+    Administrator getAdministrator();
 
     /**
-     * User Register to System.
-     * Add element into Users ArrayList.
+     * Set CurrentCourses ArrayList.
+     * İf the CurrentCourses ArrayList already set, then CurrentCourses ArrayList reset.
      */
-    void userRegister();
+    void setCurrentCoursesArrayList();
+
+    /**
+     * Get CurrentCourses ArrayList
+     *
+     * @return CurrentCourses ArrayList in the System
+     */
+    ArrayList<CourseClass> getCurrentCoursesArrayList();
+
+    /**
+     *
+     * Only Teacher can add CurrentCourses to System.
+     * Add element into CurrentCourses ArrayList.
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's password
+     * @param newCourseName New course's name
+     */
+    void addCurrentCourse(String teacherUsername, String teacherPassword,
+                    String newCourseName);
+
+    /**
+     * Only Teacher can remove CurrentCourses to System.
+     * Remove element into CurrentCourses ArrayList.
+     * Add element into OldCourses ArrayList.
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's password
+     * @param courseName The name of the course to be remove
+     */
+    void removeCurrentCourse(String teacherUsername, String teacherPassword,
+                           String courseName);
+
+    /**
+     * Set OldCourses ArrayList.
+     * İf the OldCourses ArrayList already set, then OldCourses ArrayList reset.
+     */
+    void setOldCoursesArrayList();
+
+    /**
+     * Get OldCourses ArrayList
+     *
+     * @return OldCourses ArrayList in the System
+     */
+    ArrayList<CourseClass> getOldCoursesArrayList();
+
+    /**
+     * Set Teachers ArrayList.
+     * İf the Teachers ArrayList already set, then Teachers ArrayList reset.
+     */
+    void setTeachersArrayList();
+
+    /**
+     * Get Teachers ArrayList
+     *
+     * @return Teachers ArrayList in the System
+     */
+    ArrayList<Teacher> getTeachersArrayList();
+
+    /**
+     * Only Admin can add Teacher to System.
+     * Add element into Teacher ArrayList.
+     *
+     * @param adminUsername Admin Username
+     * @param adminPassword Admin Password
+     * @param newTeacherUsername New Teacher Username
+     * @param newTeacherPassword New Teacher Password
+     */
+    void addTeacher(String adminUsername, String adminPassword,
+            String newTeacherUsername, String newTeacherPassword);
+
+    /**
+     * Set Students ArrayList.
+     * İf the Students ArrayList already set, then Students ArrayList reset.
+     */
+    void setStudentsArrayList();
+
+    /**
+     * Get Students ArrayList
+     *
+     * @return Students ArrayList in the System
+     */
+    ArrayList<Student> getStudentsArrayList();
+
+    /**
+     * Students Register to System.
+     * Add element into Students ArrayList.
+     *
+     * @param newStudentUsername newStudent's Username
+     * @param newStudentPassword newStudent's Password
+     */
+    void studentRegister(String newStudentUsername, String newStudentPassword);
 
 }//end interface System

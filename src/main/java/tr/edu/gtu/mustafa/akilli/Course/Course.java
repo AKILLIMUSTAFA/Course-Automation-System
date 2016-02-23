@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * Description:
  *
- * Courses have name, documents and assigments.
+ * Courses have a name, documents and assigments.
  *
  * @author Mustafa_Akilli
  * @since Sunday 22 February 2016, 21:14 by Mustafa_Akilli

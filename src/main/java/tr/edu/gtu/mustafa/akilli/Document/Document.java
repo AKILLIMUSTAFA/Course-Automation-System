@@ -8,7 +8,7 @@ package tr.edu.gtu.mustafa.akilli.Document;
  * Description:
  *
  * The Documents can be in different formats like books, files, slides, urls and whiteboard descriptions.
- * Documents have name.
+ * Documents have a name.
  *
  * @author Mustafa_Akilli
  * @since Sunday 22 February 2016, 22:46 by Mustafa_Akilli
