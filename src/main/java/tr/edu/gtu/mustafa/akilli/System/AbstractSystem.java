@@ -1,11 +1,18 @@
 package tr.edu.gtu.mustafa.akilli.System;
 
-import tr.edu.gtu.mustafa.akilli.Course.Course;
-
 import java.util.ArrayList;
 
 /**
- * Created by MustafaMonster on 23.02.2016.
+ * HW01_131044017_Mustafa_Akilli
+ *
+ * File:   AbstractSystem.java
+ *
+ * Description:
+ *
+ * AbstractSystem implements System interface
+ *
+ * @author Mustafa_Akilli
+ * @since Tuesday 23 February 2016, 20:49 by Mustafa_Akilli
  */
 public abstract class AbstractSystem implements System{
 
