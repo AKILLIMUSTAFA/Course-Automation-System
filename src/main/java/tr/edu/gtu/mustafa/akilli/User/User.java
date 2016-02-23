@@ -13,7 +13,6 @@ import java.util.ArrayList;
  *
  * Users like administrators,teachers,tutors and students.
  * Users must have a username and a password.
- * Users can login into system.
  *
  *
  * @author Mustafa_Akilli
