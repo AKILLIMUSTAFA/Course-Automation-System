@@ -108,7 +108,7 @@ public interface System {
      * @param newStudentUsername newStudent's Username
      * @param newStudentPassword newStudent's Password
      */
-    void StudentRegister(String newStudentUsername, String newStudentPassword);
+    void studentRegister(String newStudentUsername, String newStudentPassword);
 
 }//end interface System
 
