@@ -1,6 +1,8 @@
 package tr.edu.gtu.mustafa.akilli.System;
 
 import tr.edu.gtu.mustafa.akilli.User.Administrator;
+import tr.edu.gtu.mustafa.akilli.User.Student;
+import tr.edu.gtu.mustafa.akilli.User.Teacher;
 
 import java.util.ArrayList;
 
@@ -88,7 +90,7 @@ public abstract class AbstractSystem implements System{
                     getCurrentCoursesArrayList().add(new CourseClass(newCourseName, teacherUsername));
             }
 
-        if(admin.getUserName() == teacherUsername && admin.getPassword() == teacherPassword){
+        if(admin.getUsername() == teacherUsername && admin.getPassword() == teacherPassword){
             getCurrentCoursesArrayList().add(new CourseClass(newCourseName, teacherUsername));
             java.lang.System.out.println("Add course successful: " + newCourseName);
         }

@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <caret line="115" column="18" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#getAdministrator#0;class#System#0" expanded="false" />
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractSystem.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AbstractSystem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+            <state vertical-scroll-proportion="5.0749416">
+              <caret line="197" column="32" selection-start-line="197" selection-start-column="32" selection-end-line="197" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+              <caret line="14" column="58" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -92,14 +92,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Teacher.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Teacher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/Teacher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5152225">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
               <folding>
                 <element signature="e#865#866#0" expanded="true" />
                 <element signature="e#912#913#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,16 +139,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Document.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Document/Document.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -174,14 +178,15 @@
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/cse222/TestScenario.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Document/Document.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Course/Course.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/AbstractUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/Administrators.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/Administrator.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/Teacher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java" />
       </list>
     </option>
   </component>
@@ -834,12 +839,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java</url>
-          <line>72</line>
+          <line>74</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java</url>
-          <line>116</line>
+          <line>118</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -914,51 +919,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getAdministrator#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#setCurrentCoursesArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#getCurrentCoursesArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#addCurrentCourse#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#removeCurrentCourse#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#setOldCoursesArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#getOldCoursesArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#setTeachersArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#getTeachersArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#addTeacher#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#setStudentsArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#getStudentsArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#studentRegister#0;class#System#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -986,11 +950,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5152225">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
             <element signature="e#865#866#0" expanded="true" />
             <element signature="e#912#913#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/User/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="18" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#getAdministrator#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setCurrentCoursesArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getCurrentCoursesArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addCurrentCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#removeCurrentCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setOldCoursesArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getOldCoursesArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setTeachersArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getTeachersArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addTeacher#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setStudentsArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getStudentsArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#studentRegister#0;class#System#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.0749416">
+          <caret line="197" column="32" selection-start-line="197" selection-start-column="32" selection-end-line="197" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
