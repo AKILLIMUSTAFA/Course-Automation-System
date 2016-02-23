@@ -1,7 +1,9 @@
 Detailed System Requirements:
 
 USER (INTERFACE)
--The system has users like administrators, teachers, tutors and students. 
+-Users like administrators, teachers, tutors and students. 
+-Users must have a username and a password.
+-Users can login into system.
 
       Administrators:
         --can manage the system: 
@@ -32,30 +34,30 @@ USER (INTERFACE)
         --can upload assignments. 
         --can view grades and lecture notes.
       
-COURSE (INTERFACE)    
+COURSE (INTERFACE)   
+-Courses have a name
+-Courses have documents
+-Courses have assigments.
         
 DOCUMENT (INTERFACE)
 -The document can be in different formats like books, files, slides, urls and whiteboard descriptions.
+-Documents have a name.
       Books
       Files
       Slides
       Urls
-      Whiteboard descriptions
+      Whiteboard descriptions.
 
 ASSIGNMENTS (INTERFACE)
 -Assignments can be in different formats like quiz, homework or group project.
+-Assignments have a name.
+-Assignments have a deadline.
+-Assignments have a late deadline.
       
-      Quiz:
-        --has a deadline,
-        --has a late deadline.
-      
-      Homework:
-        --has a deadline,
-        --has a late deadline.
-      
-      Group Project:
-        --has a deadline,
-        --has a late deadline.
+      Quiz
+      Homework
+      Group Project.
         
         
-        
+SYSTEM (INTERFACE)
+-The system has users like administrators, teachers, tutors and students. 
