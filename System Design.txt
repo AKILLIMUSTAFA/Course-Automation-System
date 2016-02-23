@@ -78,7 +78,12 @@ public interface System {
 
     /**
      * Only Admin can add Teacher to System.
-     * Add element into Teacher ArrayList.
+     * Add element into Teacher ArrayList. 
+     * 
+     * @param adminUsername Admin Username
+     * @param adminPassword Admin Password 
+     * @param newTeacherUsername New Teacher Username 
+     * @param newTeacherPassword New Teacher Password
      */
     void addTeacher(String adminUsername, String adminPassword,
             String newTeacherUsername, String newTeacherPassword);
@@ -99,8 +104,11 @@ public interface System {
     /**
      * Students Register to System.
      * Add element into Students ArrayList.
+     *
+     * @param newStudentUsername newStudent's Username
+     * @param newStudentPassword newStudent's Password
      */
-    void StudentRegister();
+    void StudentRegister(String newStudentUsername, String newStudentPassword);
 
 }//end interface System
 
