@@ -18,6 +18,19 @@ public abstract class AbstractUser implements User{
     private String password;
 
     /**
+     * AbstractUser two parameters constructor
+     * Make a new User.
+     * Set Username and Password.
+     *
+     * @param newUsername new Username
+     * @param newPassword new Password
+     */
+    public AbstractUser(String newUsername, String newPassword){
+        setUsername(newUsername);
+        setPassword(newPassword);
+    }
+
+    /**
      * Set User's new username
      *
      * @param newUsername User's new username

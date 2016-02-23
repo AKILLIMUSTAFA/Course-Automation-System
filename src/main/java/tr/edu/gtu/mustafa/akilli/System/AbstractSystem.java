@@ -1,5 +1,7 @@
 package tr.edu.gtu.mustafa.akilli.System;
 
+import tr.edu.gtu.mustafa.akilli.User.Administrator;
+
 import java.util.ArrayList;
 
 /**
@@ -86,14 +88,20 @@ public abstract class AbstractSystem implements System{
                     getCurrentCoursesArrayList().add(new CourseClass(newCourseName, teacherUsername));
             }
 
-        if(existTeacher==0)
-            java.lang.System.out.println("Teacher userName or password wrong: "+ teacherUsername);
-
-        else if(alreadyCourseNameExist ==1)
-            java.lang.System.out.println("Course Name already exist: "+ newCourseName);
-
-        else
+        if(admin.getUserName() == teacherUsername && admin.getPassword() == teacherPassword){
+            getCurrentCoursesArrayList().add(new CourseClass(newCourseName, teacherUsername));
             java.lang.System.out.println("Add course successful: " + newCourseName);
+        }
+
+        else{
+            if(existTeacher==0)
+                java.lang.System.out.println("Teacher userName or password wrong: "+ teacherUsername);
+
+            else if(alreadyCourseNameExist ==1)
+                java.lang.System.out.println("Course Name already exist: "+ newCourseName);
+
+            else
+                java.lang.System.out.println("Add course successful: " + newCourseName);}
     }
 
     /**
