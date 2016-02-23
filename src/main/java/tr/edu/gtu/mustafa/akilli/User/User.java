@@ -22,20 +22,6 @@ import java.util.ArrayList;
 public interface User {
 
     /**
-     * Set Course Automation System
-     *
-     * @param newCourse new Course Automation System
-     */
-    void setCourseAutomationSystem(Course newCourse);
-
-    /**
-     * Get Course Automation System
-     *
-     * @return Course Automation System
-     */
-    Course getCourseAutomationSystem();
-
-    /**
      * Set User's new username
      *
      * @param newUsername User's new username
@@ -62,42 +48,5 @@ public interface User {
      * @return User's Password
      */
     String getPassword();
-
-    /**
-     * Login into Course Automation System.
-     * User can not do anything until login.
-     */
-    void loginIntoSystem();
-
-    /**
-     * Logout into Course Automation System.
-     */
-    void logoutIntoSystem();
-
-    /**
-     * Set Courses ArrayList.
-     * İf the Courses ArrayList already set, then Courses ArrayList reset.
-     */
-    void setCoursesArrayList();
-
-    /**
-     * Get Courses ArrayList
-     *
-     * @return Courses ArrayList in the System
-     */
-    ArrayList<Course> getCoursesArrayList();
-
-    /**
-     * Set Old Courses ArrayList.
-     * İf the Old Courses ArrayList already set, then Old Courses ArrayList reset.
-     */
-    void setOldCoursesArrayList();
-
-    /**
-     * Get Old Courses ArrayList
-     *
-     * @return Old Courses ArrayList in the System
-     */
-    ArrayList<Course> getOldCoursesArrayList();
 
 }//end interface User
