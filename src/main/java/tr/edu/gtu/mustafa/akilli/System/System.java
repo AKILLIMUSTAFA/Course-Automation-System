@@ -43,27 +43,27 @@ public interface System {
 
     /**
      *
-     * Only Teacher can add CurrentCourses to System.
+     * Only Admin can add CurrentCourses to System.
      * Add element into CurrentCourses ArrayList.
      *
-     * @param teacherUsername Teacher's Username
-     * @param teacherPassword Teacher's password
+     * @param adminUsername Admin's Username
+     * @param adminPassword Admin's password
+     * @param newteacherUsername Course Teacher Username
      * @param newCourseName New course's name
      */
-    void addCurrentCourse(String teacherUsername, String teacherPassword,
-                    String newCourseName);
+    void addCurrentCourse(String adminUsername, String adminPassword, String newteacherUsername, String newCourseName);
 
     /**
-     * Only Teacher can remove CurrentCourses to System.
+     * Only Admin can remove CurrentCourses to System.
      * Remove element into CurrentCourses ArrayList.
      * Add element into OldCourses ArrayList.
      *
-     * @param teacherUsername Teacher's Username
-     * @param teacherPassword Teacher's password
+     * @param adminUsername Admin's Username
+     * @param adminPassword Admin's password
+     * @param teacherUsername Course Teacher Username
      * @param courseName The name of the course to be remove
      */
-    void removeCurrentCourse(String teacherUsername, String teacherPassword,
-                           String courseName);
+    void removeCurrentCourse(String adminUsername, String adminPassword, String teacherUsername, String courseName);
 
     /**
      * Set OldCourses ArrayList.

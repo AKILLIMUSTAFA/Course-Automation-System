@@ -20,16 +20,19 @@ import java.util.ArrayList;
 public abstract class AbstractCourse implements Course{
 
     private String courseName;/*Course Name */
-    private ArrayList<AbstractDocument> documentsArrayList;
-    private ArrayList<AbstractAssignment> assignmentsArrayList;
+    private String courseTeacherName;/*Course Teacher Name */
+    private ArrayList<AbstractDocument> documentsArrayList;/*Course documents ArrayList */
+    private ArrayList<AbstractAssignment> assignmentsArrayList;/*Course assignments ArrayList*/
 
     /**
-     * AbstractCourse one parameters constructor
+     * AbstractCourse two parameters constructor
      *
-     * @param newCourseName newCourse's Name
+     * @param newCourseName        new Course's Name
+     * @param newCourseTeacherName new Course Teacher's Name
      */
-    public AbstractCourse(String newCourseName){
+    public AbstractCourse(String newCourseName, String newCourseTeacherName){
         setCourseName(newCourseName);
+        setCourseTeacherName(newCourseTeacherName);
         setDocumentsArrayList();
         setAssignmentsArrayList();
     }
@@ -47,6 +50,20 @@ public abstract class AbstractCourse implements Course{
      * @return Course's name
      */
     public String getCourseName() {return courseName;}
+
+    /**
+     * Set Course Teacher Name
+     *
+     * @param newCourseTeacherName new Course Teacher Name
+     */
+    public void setCourseTeacherName(String newCourseTeacherName){courseTeacherName = new String(newCourseTeacherName);}
+
+    /**
+     * Get Course Teacher Name
+     *
+     * @return Course Teacher Name
+     */
+    public String getCourseTeacherName(){return courseTeacherName;}
 
     /**
      * Set Documents ArrayList.

@@ -21,6 +21,8 @@ import java.util.ArrayList;
  */
 public abstract class AbstractSystem implements System{
 
+    private static final int ZERO = 0;
+    private static final int ONE = 1;
     private Administrator admin;/*Admin of the system*/
     private ArrayList<CourseClass> currentCoursesArrayList;/*Current Courses ArrayList*/
     private ArrayList<CourseClass> oldCoursesArrayList;/*Old Courses ArrayList*/
@@ -68,43 +70,32 @@ public abstract class AbstractSystem implements System{
      * Only Teacher can add CurrentCourses to System.
      * Add element into CurrentCourses ArrayList.
      *
-     * @param teacherUsername Teacher's Username
-     * @param teacherPassword Teacher's password
-     * @param newCourseName   New course's name
+     * @param adminUsername Admin's Username
+     * @param adminPassword Admin's password
+     * @param newteacherUsername Course Teacher Username
+     * @param newCourseName New course's name
      */
-    public void addCurrentCourse(String teacherUsername, String teacherPassword, String newCourseName) {
-        int existTeacher = 0;
-        int alreadyCourseNameExist = 0;
+    public void addCurrentCourse(String adminUsername, String adminPassword, String newteacherUsername, String newCourseName) {
 
-        for(int i = 0; i < getTeachersArrayList().size() ;++i)
-            if(getTeachersArrayList().get(i).getUsername() == teacherUsername &&
-            getTeachersArrayList().get(i).getPassword() == teacherPassword){
+        int courseNameAlreadyExist = ZERO;
 
-                existTeacher = 1;
+        for(int j = 0; j < getCurrentCoursesArrayList().size() ;++j)
+            if(getCurrentCoursesArrayList().get(j).getCourseName() == newCourseName)
+                courseNameAlreadyExist = ONE;
 
-                for(int j = 0; j < getCurrentCoursesArrayList().size() ;++j)
-                    if(getCurrentCoursesArrayList().get(j).getCourseName() == newCourseName){
-                        alreadyCourseNameExist = 1;
-                    }
+        if(courseNameAlreadyExist == ZERO){
 
-                if(alreadyCourseNameExist!=1)
-                    getCurrentCoursesArrayList().add(new CourseClass(newCourseName, teacherUsername));
+            if(admin.getUsername() == adminUsername && admin.getPassword() == adminPassword){
+                getCurrentCoursesArrayList().add(new CourseClass(newCourseName, newteacherUsername));
+                java.lang.System.out.println("Add course successful: " + newCourseName);
             }
-
-        if(admin.getUsername() == teacherUsername && admin.getPassword() == teacherPassword){
-            getCurrentCoursesArrayList().add(new CourseClass(newCourseName, teacherUsername));
-            java.lang.System.out.println("Add course successful: " + newCourseName);
-        }
-
-        else{
-            if(existTeacher==0)
-                java.lang.System.out.println("Teacher userName or password wrong: "+ teacherUsername);
-
-            else if(alreadyCourseNameExist ==1)
-                java.lang.System.out.println("Course Name already exist: "+ newCourseName);
-
             else
-                java.lang.System.out.println("Add course successful: " + newCourseName);}
+                java.lang.System.out.println("Admin userName or Password is invalid: ");
+
+        }
+        else
+            java.lang.System.out.println("Course Name already exist: "+ newCourseName);
+
     }
 
     /**
@@ -112,25 +103,29 @@ public abstract class AbstractSystem implements System{
      * Remove element into CurrentCourses ArrayList.
      * Add element into OldCourses ArrayList.
      *
-     * @param teacherUsername Teacher's Username
-     * @param teacherPassword Teacher's password
-     * @param courseName      The name of the course to be remove
+     * @param adminUsername Admin's Username
+     * @param adminPassword Admin's password
+     * @param teacherUsername Course Teacher Username
+     * @param courseName    The name of the course to be remove
      */
-    public void removeCurrentCourse(String teacherUsername, String teacherPassword, String courseName) {
-        int existCourse=0;
+    public void removeCurrentCourse(String adminUsername, String adminPassword, String teacherUsername, String courseName) {
+        int courseNameExist = 0;
 
-        for(int j = 0; j < getCurrentCoursesArrayList().size() ;++j)
-            if(getCurrentCoursesArrayList().get(j).getCourseName() == courseName){
-                getCurrentCoursesArrayList().remove(j);
-                getOldCoursesArrayList().add(new CourseClass(courseName, teacherUsername));
-                existCourse=1;
-            }
+        if(admin.getUsername() == adminUsername && admin.getPassword() == adminPassword) {
+            for (int j = 0; j < getCurrentCoursesArrayList().size(); ++j)
+                if (getCurrentCoursesArrayList().get(j).getCourseName() == courseName){
+                    getCurrentCoursesArrayList().remove(j);
+                    getOldCoursesArrayList().add(new CourseClass(courseName, teacherUsername));
+                    java.lang.System.out.println("Remove course successful: " + courseName);
+                    courseNameExist = 1;
+                }
 
-        if(existCourse == 1)
-            java.lang.System.out.println(courseName + " deleted.");
-
+            if(courseNameExist == 0)
+                java.lang.System.out.println("Course Name not exist: "+ courseName);
+        }
         else
-            java.lang.System.out.println("Course not found: " + courseName);
+            java.lang.System.out.println("Admin userName or Password is invalid: ");
+
     }
 
     /**
@@ -171,17 +166,20 @@ public abstract class AbstractSystem implements System{
     public void addTeacher(String adminUsername, String adminPassword, String newTeacherUsername, String newTeacherPassword) {
         int existCourse=0;
 
-        for(int j = 0; j < getTeachersArrayList().size() ;++j)
-            if(getTeachersArrayList().get(j).getUsername() == newTeacherUsername)
-                existCourse=1;
+        if(admin.getUsername() == adminUsername && admin.getPassword() == adminPassword) {
+            for (int j = 0; j < getTeachersArrayList().size(); ++j)
+                if (getTeachersArrayList().get(j).getUsername() == newTeacherUsername)
+                    existCourse = 1;
 
-        if(existCourse == 0){
-            java.lang.System.out.println("New Teacher added: " + newTeacherUsername);
-            getTeachersArrayList().add(new Teacher(newTeacherUsername, newTeacherPassword));
+            if (existCourse == 0) {
+                java.lang.System.out.println("New Teacher added: " + newTeacherUsername);
+                getTeachersArrayList().add(new Teacher(newTeacherUsername, newTeacherPassword));
+            } else {
+                java.lang.System.out.println("Teacher username already exist: " + newTeacherUsername);
+            }
         }
-
-        else {
-            java.lang.System.out.println("Teacher username already exist: " + newTeacherUsername);
+        else{
+            java.lang.System.out.println("Admin username or password is invalid");
         }
     }
 

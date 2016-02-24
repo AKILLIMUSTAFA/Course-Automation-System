@@ -15,11 +15,12 @@ package tr.edu.gtu.mustafa.akilli.Course;
 public class CourseClass extends AbstractCourse{
 
     /**
-     * CourseClass one parameters constructor
+     * CourseClass two parameters constructor
      *
-     * @param newCourseClassName newCourseClass's Name
+     * @param newCourseName        new Course's Name
+     * @param newCourseTeacherName new Course Teacher's Name
      */
-    public CourseClass(String newCourseClassName) {
-        super(newCourseClassName);
+    public CourseClass(String newCourseName, String newCourseTeacherName) {
+        super(newCourseName, newCourseTeacherName);
     }
 }
