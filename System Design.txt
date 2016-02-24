@@ -231,6 +231,19 @@ public interface Assignment {
     String getAssignmentName();
 
     /**
+     * Set AssignmentStudentScore ArrayList.
+     * İf the AssignmentStudentScore ArrayList already set, then AssignmentStudentScore ArrayList reset. 
+     */
+    void setAssignmentStudentScoreArrayList();
+
+    /**
+     * Get Assignment Student Score ArrayList
+     * 
+     * @return Assignment Student Score ArrayList
+     */
+    ArrayList<AssignmentScore> getAssignmentStudentScoreArrayList();
+    
+    /**
      * Set Deadline Time
      *
      * @param newDay Deadline Time's new Day
