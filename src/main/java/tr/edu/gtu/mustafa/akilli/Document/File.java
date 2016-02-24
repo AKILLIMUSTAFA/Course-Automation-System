@@ -14,7 +14,7 @@ package tr.edu.gtu.mustafa.akilli.Document;
  */
 public class File extends AbstractDocument{
     /**
-     * AbstractDocument one parameters constructor
+     * File one parameters constructor
      *
      * @param newFileName new File's Name
      */

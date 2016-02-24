@@ -14,7 +14,7 @@ package tr.edu.gtu.mustafa.akilli.Document;
  */
 public class Book extends AbstractDocument{
     /**
-     * AbstractDocument one parameters constructor
+     * Book one parameters constructor
      *
      * @param newBookName new Book's Name
      */

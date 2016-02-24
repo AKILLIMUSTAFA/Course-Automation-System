@@ -14,7 +14,7 @@ package tr.edu.gtu.mustafa.akilli.Document;
  */
 public class Slide extends AbstractDocument{
     /**
-     * AbstractSlide one parameters constructor
+     * Slide one parameters constructor
      *
      * @param newSlideName new Slide's Name
      */
