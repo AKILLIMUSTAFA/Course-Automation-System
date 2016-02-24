@@ -1,7 +1,7 @@
 package tr.edu.gtu.mustafa.akilli.Course;
 
-import tr.edu.gtu.mustafa.akilli.Assignment.Assignment;
-import tr.edu.gtu.mustafa.akilli.Document.Document;
+import tr.edu.gtu.mustafa.akilli.Assignment.AbstractAssignment;
+import tr.edu.gtu.mustafa.akilli.Document.AbstractDocument;
 import java.util.ArrayList;
 
 /**
@@ -43,7 +43,7 @@ public interface Course {
      *
      * @return Documents ArrayList in the System
      */
-    ArrayList<Document> getDocumentsArrayList();
+    ArrayList<AbstractDocument> getDocumentsArrayList();
 
     /**
      * Set Assignments ArrayList
@@ -56,6 +56,6 @@ public interface Course {
      *
      * @return Assignments ArrayList in the System
      */
-    ArrayList<Assignment> getAssignmentsArrayList();
+    ArrayList<AbstractAssignment> getAssignmentsArrayList();
 
 }//end interface Course
