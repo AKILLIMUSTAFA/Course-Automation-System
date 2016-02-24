@@ -165,6 +165,20 @@ public interface Course {
     String getCourseName();
 
     /**
+     * Set Course Teacher Name
+     * 
+     * @param newCourseTeacherName new Course Teacher Name
+     */
+    void setCourseTeacherName(String newCourseTeacherName);
+
+    /**
+     * Get Course Teacher Name
+     * 
+     * @return Course Teacher Name
+     */
+    String getCourseTeacherName();
+
+    /**
      * Set Documents ArrayList.
      * İf the Documents ArrayList already set, then Documents ArrayList reset.
      */
