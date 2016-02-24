@@ -17,7 +17,7 @@ public class Quiz extends AbstractAssignment{
     /**
      * Quiz two parameter constructor
      *
-     * @param newQuizName        new Quiz's Name
+     * @param newQuizName              new Quiz's Name
      * @param newDeadLineTimeDay       new DeadLineTime Day
      * @param newDeadLineTimeMonth     new DeadLineTime Month
      * @param newDeadLineTimeYear      new DeadLineTime Year
