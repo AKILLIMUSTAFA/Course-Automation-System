@@ -17,6 +17,15 @@ public class AbstractDocument implements Document{
     private String documentName;/*Document's Name*/
 
     /**
+     * AbstractDocument one parameters constructor
+     *
+     * @param newDocumentName new Document's Name
+     */
+    public AbstractDocument(String newDocumentName){
+        setDocumentName(newDocumentName);
+    }
+
+    /**
      * Set Document Name
      *
      * @param newDocumentName Document's new name
