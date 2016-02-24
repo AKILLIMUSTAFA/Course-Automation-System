@@ -13,13 +13,12 @@ package tr.edu.gtu.mustafa.akilli.Document;
  * @since Wednesday 24 February 2016, 14:25 by Mustafa_Akilli
  */
 public class Book extends AbstractDocument{
-
     /**
      * AbstractDocument one parameters constructor
      *
-     * @param newDocumentName new Document's Name
+     * @param newBookName new Book's Name
      */
-    public Book(String newDocumentName) {
-        super(newDocumentName);
+    public Book(String newBookName) {
+        super(newBookName);
     }
 }
