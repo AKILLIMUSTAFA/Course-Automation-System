@@ -28,7 +28,7 @@ public class Quiz extends AbstractAssignment{
     public Quiz(String newQuizName,
                 int newDeadLineTimeDay, int newDeadLineTimeMonth, int newDeadLineTimeYear,
                 int newLateDeadLineTimeDay, int newLateDeadLineTimeMonth, int newLateDeadLineTimeYear) {
-        super(newAssignmentName, newDeadLineTimeDay, newDeadLineTimeMonth, newDeadLineTimeYear,
+        super(newQuizName, newDeadLineTimeDay, newDeadLineTimeMonth, newDeadLineTimeYear,
                 newLateDeadLineTimeDay, newLateDeadLineTimeMonth, newLateDeadLineTimeYear);
     }
 }

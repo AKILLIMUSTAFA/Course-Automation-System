@@ -101,47 +101,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractAssignment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/AbstractAssignment.java">
+      <file leaf-file-name="Quiz.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Quiz.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
-              <folding>
-                <element signature="docComment;method#AbstractAssignment#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="docComment;method#setAssignmentName#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="docComment;method#getAssignmentName#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="docComment;method#setAssignmentStudentScoreArrayList#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="docComment;method#getAssignmentStudentScoreArrayList#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="docComment;method#setDeadlineTime#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="docComment;method#getDeadlineTimeDay#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="e#3448#3449#0" expanded="true" />
-                <element signature="e#3486#3487#0" expanded="true" />
-                <element signature="docComment;method#getDeadlineTimeMonth#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="e#3620#3621#0" expanded="true" />
-                <element signature="e#3660#3661#0" expanded="true" />
-                <element signature="docComment;method#getDeadlineTimeYear#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="e#3791#3792#0" expanded="true" />
-                <element signature="e#3830#3831#0" expanded="true" />
-                <element signature="docComment;method#setLateDeadlineTime#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="docComment;method#getLateDeadlineTimeDay#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="e#4460#4461#0" expanded="true" />
-                <element signature="e#4502#4503#0" expanded="true" />
-                <element signature="docComment;method#getLateDeadlineTimeMonth#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="e#4648#4649#0" expanded="true" />
-                <element signature="e#4692#4693#0" expanded="true" />
-                <element signature="docComment;method#getLateDeadlineTimeYear#0;class#AbstractAssignment#0" expanded="false" />
-                <element signature="e#4835#4836#0" expanded="true" />
-                <element signature="e#4878#4879#0" expanded="true" />
-              </folding>
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Quiz.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Quiz.java">
+      <file leaf-file-name="Homework.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Homework.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.793911">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.46370023">
+              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -191,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Assignment.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/AbstractAssignment.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Quiz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Homework.java" />
       </list>
     </option>
   </component>
@@ -1074,17 +1049,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Assignment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/AbstractAssignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.26229507">
           <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
           <folding>
             <element signature="docComment;method#AbstractAssignment#0;class#AbstractAssignment#0" expanded="false" />
@@ -1116,10 +1083,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Assignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Quiz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.793911">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Homework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46370023">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
           <folding />
         </state>
       </provider>
