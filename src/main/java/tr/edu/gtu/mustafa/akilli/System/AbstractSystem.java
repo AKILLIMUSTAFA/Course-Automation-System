@@ -1,5 +1,6 @@
 package tr.edu.gtu.mustafa.akilli.System;
 
+import tr.edu.gtu.mustafa.akilli.Course.CourseClass;
 import tr.edu.gtu.mustafa.akilli.User.Administrator;
 import tr.edu.gtu.mustafa.akilli.User.Student;
 import tr.edu.gtu.mustafa.akilli.User.Teacher;
