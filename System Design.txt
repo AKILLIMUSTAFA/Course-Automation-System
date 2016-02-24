@@ -175,7 +175,7 @@ public interface Course {
      *
      * @return Documents ArrayList in the System
      */
-    ArrayList<Document> getDocumentsArrayList();
+    ArrayList<AbstractDocument> getDocumentsArrayList();
 
     /**
      * Set Assignments ArrayList
@@ -188,7 +188,7 @@ public interface Course {
      *
      * @return Assignments ArrayList in the System
      */
-    ArrayList<Assignment> getAssignmentsArrayList();
+    ArrayList<AbstractAssignment> getAssignmentsArrayList();
 
 }//end interface Course
 
