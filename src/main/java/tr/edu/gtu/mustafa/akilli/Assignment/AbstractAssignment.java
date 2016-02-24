@@ -41,7 +41,7 @@ public abstract class AbstractAssignment implements Assignment{
                               int newLateDeadLineTimeDay, int newLateDeadLineTimeMonth, int newLateDeadLineTimeYear){
         setAssignmentName(newAssignmentName);
         setAssignmentStudentScoreArrayList();
-        setDeeadlineTime(newDeadLineTimeDay, newDeadLineTimeMonth, newDeadLineTimeYear);
+        setDeadlineTime(newDeadLineTimeDay, newDeadLineTimeMonth, newDeadLineTimeYear);
         setLateDeadlineTime(newLateDeadLineTimeDay, newLateDeadLineTimeMonth, newLateDeadLineTimeYear);
     }
 
@@ -79,7 +79,7 @@ public abstract class AbstractAssignment implements Assignment{
      * @param newMonth Deadline Time's new Month
      * @param newYear  Deadline Time's new Year
      */
-    public void setDeeadlineTime(int newDay, int newMonth, int newYear) {
+    public void setDeadlineTime(int newDay, int newMonth, int newYear) {
         deadLineTimeDay = newDay;/* DeadLine Time's Day */
         deadLineTimeMonth = newMonth;/* DeadLine Time's Month */
         deadLineTimeYear = newYear;/* DeadLine Time's Year */
