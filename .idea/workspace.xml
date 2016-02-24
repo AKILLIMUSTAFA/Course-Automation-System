@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#getAdministrator#0;class#System#0" expanded="false" />
@@ -95,18 +95,42 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Assignment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="16" selection-end-column="3" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="18" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssignmentScore.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/AssignmentScore.java">
+      <file leaf-file-name="AbstractAssignment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/AbstractAssignment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38641685">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-              <folding />
+            <state vertical-scroll-proportion="0.20608899">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="40" />
+              <folding>
+                <element signature="docComment;method#getAssignmentName#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="docComment;method#setAssignmentStudentScoreArrayList#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="docComment;method#getAssignmentStudentScoreArrayList#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="docComment;method#setDeeadlineTime#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="docComment;method#getDeadlineTimeDay#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="e#3450#3451#0" expanded="true" />
+                <element signature="e#3488#3489#0" expanded="true" />
+                <element signature="docComment;method#getDeadlineTimeMonth#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="e#3622#3623#0" expanded="true" />
+                <element signature="e#3662#3663#0" expanded="true" />
+                <element signature="docComment;method#getDeadlineTimeYear#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="e#3793#3794#0" expanded="true" />
+                <element signature="e#3832#3833#0" expanded="true" />
+                <element signature="docComment;method#setLateDeadlineTime#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="docComment;method#getLateDeadlineTimeDay#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="e#4462#4463#0" expanded="true" />
+                <element signature="e#4504#4505#0" expanded="true" />
+                <element signature="docComment;method#getLateDeadlineTimeMonth#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="e#4650#4651#0" expanded="true" />
+                <element signature="e#4694#4695#0" expanded="true" />
+                <element signature="docComment;method#getLateDeadlineTimeYear#0;class#AbstractAssignment#0" expanded="false" />
+                <element signature="e#4837#4838#0" expanded="true" />
+                <element signature="e#4880#4881#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/cse222/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/tr/edu/gtu/mustafa/akilli/cse222/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cse222tr/edu/gtu/mustafa/akilli/User/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Assignment.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/cse222/TestScenario.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Course/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java" />
@@ -153,6 +176,8 @@
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Document/WhiteboardDescriptions.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Document/WhiteboardDescription.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/AssignmentScore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Assignment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/AbstractAssignment.java" />
       </list>
     </option>
   </component>
@@ -903,47 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getAdministrator#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#setCurrentCoursesArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#getCurrentCoursesArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#addCurrentCourse#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#removeCurrentCourse#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#setOldCoursesArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#getOldCoursesArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#setTeachersArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#getTeachersArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#addTeacher#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#setStudentsArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#getStudentsArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#studentRegister#0;class#System#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Document/AbstractDocument.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5409836">
@@ -1022,10 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Assignment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/AssignmentScore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="16" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.38641685">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1038,11 +1022,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/AssignmentScore.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38641685">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#getAdministrator#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setCurrentCoursesArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getCurrentCoursesArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addCurrentCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#removeCurrentCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setOldCoursesArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getOldCoursesArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setTeachersArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getTeachersArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addTeacher#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setStudentsArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getStudentsArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#studentRegister#0;class#System#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Assignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="18" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/AbstractAssignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20608899">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="docComment;method#getAssignmentName#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="docComment;method#setAssignmentStudentScoreArrayList#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="docComment;method#getAssignmentStudentScoreArrayList#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="docComment;method#setDeeadlineTime#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="docComment;method#getDeadlineTimeDay#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="e#3450#3451#0" expanded="true" />
+            <element signature="e#3488#3489#0" expanded="true" />
+            <element signature="docComment;method#getDeadlineTimeMonth#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="e#3622#3623#0" expanded="true" />
+            <element signature="e#3662#3663#0" expanded="true" />
+            <element signature="docComment;method#getDeadlineTimeYear#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="e#3793#3794#0" expanded="true" />
+            <element signature="e#3832#3833#0" expanded="true" />
+            <element signature="docComment;method#setLateDeadlineTime#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="docComment;method#getLateDeadlineTimeDay#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="e#4462#4463#0" expanded="true" />
+            <element signature="e#4504#4505#0" expanded="true" />
+            <element signature="docComment;method#getLateDeadlineTimeMonth#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="e#4650#4651#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="docComment;method#getLateDeadlineTimeYear#0;class#AbstractAssignment#0" expanded="false" />
+            <element signature="e#4837#4838#0" expanded="true" />
+            <element signature="e#4880#4881#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

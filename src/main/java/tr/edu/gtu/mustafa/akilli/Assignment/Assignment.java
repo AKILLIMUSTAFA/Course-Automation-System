@@ -1,5 +1,7 @@
 package tr.edu.gtu.mustafa.akilli.Assignment;
 
+import java.util.ArrayList;
+
 /**
  * HW01_131044017_Mustafa_Akilli
  *
@@ -30,6 +32,19 @@ public interface Assignment {
      * @return Assignment's name
      */
     String getAssignmentName();
+
+    /**
+     * Set AssignmentStudentScore ArrayList.
+     * İf the AssignmentStudentScore ArrayList already set, then AssignmentStudentScore ArrayList reset.
+     */
+    void setAssignmentStudentScoreArrayList();
+
+    /**
+     * Get Assignment Student Score ArrayList
+     *
+     * @return Assignment Student Score ArrayList
+     */
+    ArrayList<AssignmentScore> getAssignmentStudentScoreArrayList();
 
     /**
      * Set Deadline Time
