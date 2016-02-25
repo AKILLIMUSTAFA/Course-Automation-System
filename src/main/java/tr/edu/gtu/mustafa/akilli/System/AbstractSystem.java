@@ -1,6 +1,7 @@
 package tr.edu.gtu.mustafa.akilli.System;
 
 import tr.edu.gtu.mustafa.akilli.Assignment.AbstractAssignment;
+import tr.edu.gtu.mustafa.akilli.Assignment.Assignment;
 import tr.edu.gtu.mustafa.akilli.Course.CourseClass;
 import tr.edu.gtu.mustafa.akilli.Document.AbstractDocument;
 import tr.edu.gtu.mustafa.akilli.User.Administrator;
@@ -328,4 +329,29 @@ public abstract class AbstractSystem implements System{
         }
 
     }
+
+    /**
+     * Student Upload Assignment
+     *
+     * @param newAssignment  New Student Assignment
+     */
+    public void studentUploadAssignment(Assignment newAssignment){;}
+
+    /**
+     * Student Grades in the Course
+     *
+     * @param studentUsername Student's Username
+     * @param studentPassword Student's Password
+     * @param courseName      Course Name
+     */
+    public abstract void studentGrade(String studentUsername, String studentPassword, String courseName);
+
+    /**
+     * Student Lecture Notes in the Course
+     *
+     * @param studentUsername Student's Username
+     * @param studentPassword Student's Password
+     * @param courseName      Course Name
+     */
+    public abstract void studentLectureNote(String studentUsername, String studentPassword, String courseName);
 }

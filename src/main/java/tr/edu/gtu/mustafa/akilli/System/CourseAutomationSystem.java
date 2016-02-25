@@ -382,6 +382,66 @@ public class CourseAutomationSystem extends AbstractSystem{
     }
 
     /**
+     * Student Grades in the Course
+     *
+     * @param studentUsername Student's Username
+     * @param studentPassword Student's Password
+     * @param courseName      Course Name
+     */
+    @Override
+    public void studentGrade(String studentUsername, String studentPassword, String courseName) {
+
+        int studentIndex = getStudentIndexInStudentArrayList(studentUsername, studentPassword);
+        int courseIndex= getCourseIndexInCourseArrayList(courseName);
+
+        if(studentIndex != NOT_EXIST && courseIndex != NOT_EXIST){
+            for(int i = 0; i < getCurrentCoursesArrayList().get(courseIndex).getAssignmentsArrayList().size(); ++i)
+                for(int j = 0; j < getCurrentCoursesArrayList().get(courseIndex).getAssignmentsArrayList().
+                        get(i).getAssignmentStudentScoreArrayList().size(); ++j)
+                    if(getCurrentCoursesArrayList().get(courseIndex).getAssignmentsArrayList().get(i).
+                            getAssignmentStudentScoreArrayList().get(j).getStudentUsername().equals(studentUsername)) {
+                        java.lang.System.out.println(getCurrentCoursesArrayList().get(courseIndex).getAssignmentsArrayList().
+                                get(i).getAssignmentName() + ": " + getCurrentCoursesArrayList().get(courseIndex).
+                                getAssignmentsArrayList().get(i).getAssignmentStudentScoreArrayList().get(j).getStudentAssignmentScore());
+                    }
+        }
+
+        if(studentIndex == NOT_EXIST)
+            java.lang.System.out.println("Tutor not exist.");
+
+        if(courseIndex == NOT_EXIST)
+            java.lang.System.out.println("Course not exist: " + courseName );
+    }
+
+    /**
+     * Student Lecture Notes in the Course
+     *
+     * @param studentUsername Student's Username
+     * @param studentPassword Student's Password
+     * @param courseName      Course Name
+     */
+    @Override
+    public void studentLectureNote(String studentUsername, String studentPassword, String courseName) {
+
+        int studentIndex = getStudentIndexInStudentArrayList(studentUsername, studentPassword);
+        int courseIndex= getCourseIndexInCourseArrayList(courseName);
+        int studentInCourse = getStudentIndexInStudentCourseArrayList(courseName, studentUsername);
+
+        if(studentIndex != NOT_EXIST && courseIndex != NOT_EXIST && studentInCourse!=NOT_EXIST)
+            for(int index = 0; index < getCurrentCoursesArrayList().get(courseIndex).getDocumentsArrayList().size(); ++index)
+                getCurrentCoursesArrayList().get(courseIndex).getDocumentsArrayList().get(index).getDocumentName();
+
+        if(studentIndex == NOT_EXIST)
+            java.lang.System.out.println("Tutor not exist.");
+
+        if(courseIndex == NOT_EXIST)
+            java.lang.System.out.println("Course not exist: " + courseName );
+
+        if(studentInCourse == NOT_EXIST)
+            java.lang.System.out.println("Student not registered this course." );
+    }
+
+    /**
      * Get Course Index In Course ArrayList
      *
      * @param courseName Course's Name
