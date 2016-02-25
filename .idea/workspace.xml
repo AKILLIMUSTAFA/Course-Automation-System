@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="105" column="120" selection-start-line="105" selection-start-column="120" selection-end-line="105" selection-end-column="120" />
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#getAdministrator#0;class#System#0" expanded="false" />
@@ -34,6 +34,14 @@
                 <element signature="docComment;method#getCurrentCoursesArrayList#0;class#System#0" expanded="false" />
                 <element signature="docComment;method#addCurrentCourse#0;class#System#0" expanded="false" />
                 <element signature="docComment;method#removeCurrentCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#addStudentIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#removeStudentIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#addTutorIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#removeTutorIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#addDocumentIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#removeDocumentIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#addAssignmentIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#setOldCoursesArrayList#0;class#System#0" expanded="false" />
                 <element signature="docComment;method#getOldCoursesArrayList#0;class#System#0" expanded="false" />
                 <element signature="docComment;method#setTeachersArrayList#0;class#System#0" expanded="false" />
                 <element signature="docComment;method#getTeachersArrayList#0;class#System#0" expanded="false" />
@@ -50,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="181" column="4" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
+              <caret line="199" column="7" selection-start-line="199" selection-start-column="7" selection-end-line="199" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#AbstractSystem#0;class#AbstractSystem#0" expanded="false" />
@@ -67,6 +75,8 @@
                 <element signature="docComment;method#addTutorIntoCourse#0;class#AbstractSystem#0" expanded="false" />
                 <element signature="docComment;method#removeTutorIntoCourse#0;class#AbstractSystem#0" expanded="false" />
                 <element signature="docComment;method#addDocumentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#removeDocumentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#addAssignmentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
                 <element signature="docComment;method#setOldCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
                 <element signature="docComment;method#getOldCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
                 <element signature="docComment;method#setTeachersArrayList#0;class#AbstractSystem#0" expanded="false" />
@@ -77,7 +87,6 @@
                 <element signature="docComment;method#getStudentsArrayList#0;class#AbstractSystem#0" expanded="false" />
                 <element signature="docComment;method#studentRegister#0;class#AbstractSystem#0" expanded="false" />
                 <element signature="method#studentRegister#0;class#AbstractSystem#0" expanded="false" />
-                <marker date="1456420056312" expanded="false" signature="6930:7239" placeholder="/**...*/" />
               </folding>
             </state>
           </provider>
@@ -86,8 +95,8 @@
       <file leaf-file-name="CourseAutomationSystem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.021077283">
-              <caret line="184" column="4" selection-start-line="184" selection-start-column="4" selection-end-line="184" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.12412178">
+              <caret line="256" column="141" selection-start-line="256" selection-start-column="141" selection-end-line="256" selection-end-column="141" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#CourseAutomationSystem#0;class#CourseAutomationSystem#0" expanded="false" />
@@ -104,6 +113,7 @@
                 <element signature="method#addDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
                 <element signature="docComment;method#removeDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
                 <element signature="method#removeDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
+                <element signature="method#addAssignmentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
                 <element signature="docComment;method#getCourseIndexInCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
                 <element signature="method#getCourseIndexInCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
                 <element signature="docComment;method#getTeacherIndexInTeacherArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
@@ -118,7 +128,10 @@
                 <element signature="method#getStudentIndexInStudentCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
                 <element signature="docComment;method#getTutorIndexInTutorCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
                 <element signature="method#getTutorIndexInTutorCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
+                <element signature="docComment;method#getDocumentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
                 <element signature="method#getDocumentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
+                <element signature="docComment;method#getAssignmentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
+                <element signature="method#getAssignmentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -203,9 +216,9 @@
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Course/CourseClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Course/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Course/AbstractCourse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java" />
       </list>
     </option>
   </component>
@@ -1059,26 +1072,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/GroupProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.587822">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Quiz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48946136">
           <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Assignment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41217798">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1129,10 +1126,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/GroupProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.587822">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Assignment/Assignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27868852">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="120" selection-start-line="105" selection-start-column="120" selection-end-line="105" selection-end-column="120" />
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#getAdministrator#0;class#System#0" expanded="false" />
@@ -1140,6 +1153,14 @@
             <element signature="docComment;method#getCurrentCoursesArrayList#0;class#System#0" expanded="false" />
             <element signature="docComment;method#addCurrentCourse#0;class#System#0" expanded="false" />
             <element signature="docComment;method#removeCurrentCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addStudentIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#removeStudentIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addTutorIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#removeTutorIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addDocumentIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#removeDocumentIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addAssignmentIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setOldCoursesArrayList#0;class#System#0" expanded="false" />
             <element signature="docComment;method#getOldCoursesArrayList#0;class#System#0" expanded="false" />
             <element signature="docComment;method#setTeachersArrayList#0;class#System#0" expanded="false" />
             <element signature="docComment;method#getTeachersArrayList#0;class#System#0" expanded="false" />
@@ -1154,7 +1175,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="4" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
+          <caret line="199" column="7" selection-start-line="199" selection-start-column="7" selection-end-line="199" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#AbstractSystem#0;class#AbstractSystem#0" expanded="false" />
@@ -1171,6 +1192,8 @@
             <element signature="docComment;method#addTutorIntoCourse#0;class#AbstractSystem#0" expanded="false" />
             <element signature="docComment;method#removeTutorIntoCourse#0;class#AbstractSystem#0" expanded="false" />
             <element signature="docComment;method#addDocumentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#removeDocumentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#addAssignmentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
             <element signature="docComment;method#setOldCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
             <element signature="docComment;method#getOldCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
             <element signature="docComment;method#setTeachersArrayList#0;class#AbstractSystem#0" expanded="false" />
@@ -1181,15 +1204,14 @@
             <element signature="docComment;method#getStudentsArrayList#0;class#AbstractSystem#0" expanded="false" />
             <element signature="docComment;method#studentRegister#0;class#AbstractSystem#0" expanded="false" />
             <element signature="method#studentRegister#0;class#AbstractSystem#0" expanded="false" />
-            <marker date="1456420056312" expanded="false" signature="6930:7239" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.021077283">
-          <caret line="184" column="4" selection-start-line="184" selection-start-column="4" selection-end-line="184" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.12412178">
+          <caret line="256" column="141" selection-start-line="256" selection-start-column="141" selection-end-line="256" selection-end-column="141" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#CourseAutomationSystem#0;class#CourseAutomationSystem#0" expanded="false" />
@@ -1206,6 +1228,7 @@
             <element signature="method#addDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#removeDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="method#removeDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
+            <element signature="method#addAssignmentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#getCourseIndexInCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="method#getCourseIndexInCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#getTeacherIndexInTeacherArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
@@ -1220,7 +1243,10 @@
             <element signature="method#getStudentIndexInStudentCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#getTutorIndexInTutorCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="method#getTutorIndexInTutorCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
+            <element signature="docComment;method#getDocumentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="method#getDocumentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
+            <element signature="docComment;method#getAssignmentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
+            <element signature="method#getAssignmentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
           </folding>
         </state>
       </provider>

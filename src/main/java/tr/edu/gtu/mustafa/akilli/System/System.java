@@ -1,6 +1,8 @@
 package tr.edu.gtu.mustafa.akilli.System;
 
+import tr.edu.gtu.mustafa.akilli.Assignment.AbstractAssignment;
 import tr.edu.gtu.mustafa.akilli.Course.CourseClass;
+import tr.edu.gtu.mustafa.akilli.Document.AbstractDocument;
 import tr.edu.gtu.mustafa.akilli.User.Administrator;
 import tr.edu.gtu.mustafa.akilli.User.Student;
 import tr.edu.gtu.mustafa.akilli.User.Teacher;
@@ -104,6 +106,36 @@ public interface System {
      * @param tutorUsername   will remove into course
      */
     void removeTutorIntoCourse(String teacherUsername, String teacherPassword, String courseName, String tutorUsername);
+
+    /**
+     * Add Document Into Course
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @param newDocument     (AbstractDocument)new Document like Book, File, Slide, Url, Whiteboard description.
+     */
+    void addDocumentIntoCourse(String teacherUsername, String teacherPassword, String courseName, AbstractDocument newDocument);
+
+    /**
+     * Remove Document Into Course
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @param newDocument     (AbstractDocument)new Document like Book, File, Slide, Url, Whiteboard description.
+     */
+    void removeDocumentIntoCourse(String teacherUsername, String teacherPassword, String courseName, AbstractDocument newDocument);
+
+    /**
+     * Add Assignment Into Course
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @param newAssignment   (AbstractAssignment) newAssignment like Quiz, Homework, Group Project.
+     */
+    void addAssignmentIntoCourse(String teacherUsername, String teacherPassword, String courseName, AbstractAssignment newAssignment);
 
     /**
      * Set OldCourses ArrayList.

@@ -1,5 +1,6 @@
 package tr.edu.gtu.mustafa.akilli.System;
 
+import tr.edu.gtu.mustafa.akilli.Assignment.AbstractAssignment;
 import tr.edu.gtu.mustafa.akilli.Document.AbstractDocument;
 import tr.edu.gtu.mustafa.akilli.User.Student;
 
@@ -245,6 +246,36 @@ public class CourseAutomationSystem extends AbstractSystem{
     }
 
     /**
+     * Add Assignment Into Course
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @param newAssignment   (AbstractAssignment) newAssignment like Quiz, Homework, Group Project.
+     */
+    @Override
+    public void addAssignmentIntoCourse(String teacherUsername, String teacherPassword, String courseName, AbstractAssignment newAssignment) {
+        int teacherIndex = getTeacherIndexInTeacherArrayList(teacherUsername, teacherPassword);
+        int courseIndex= getCourseIndexInCourseArrayList(courseName);
+        int courseAssignmentAlreadyExist = getAssignmentIndexInDocumentinCourseArrayList(courseName, newAssignment.getAssignmentName());
+
+        //if everything is fine. So add Student Into Course
+        if(teacherIndex != NOT_EXIST && courseIndex != NOT_EXIST && courseAssignmentAlreadyExist == NOT_EXIST){
+            getCurrentCoursesArrayList().get(courseIndex).getAssignmentsArrayList().add(newAssignment);
+            java.lang.System.out.println("Add "+ newAssignment.getAssignmentName() + " into " + courseName + " successful");
+        }
+
+        if(teacherIndex == NOT_EXIST)
+            java.lang.System.out.println("Teacher userName or Password is invalid");
+
+        if(courseIndex == NOT_EXIST)
+            java.lang.System.out.println("Course not exist: " + courseName );
+
+        if(courseAssignmentAlreadyExist != NOT_EXIST)
+            java.lang.System.out.println("Assignment already exist in the course: "+ newAssignment.getAssignmentName());
+    }
+
+    /**
      * Get Course Index In Course ArrayList
      *
      * @param courseName Course's Name
@@ -370,6 +401,13 @@ public class CourseAutomationSystem extends AbstractSystem{
         return tutorIndex;
     }
 
+    /**
+     * Get Document Index In Document in Course ArrayList
+     *
+     * @param courseName   Course's Name
+     * @param documentName Document's Name
+     * @return             Document Index In Document in Course ArrayList
+     */
     private int getDocumentIndexInDocumentinCourseArrayList(String courseName, String documentName){
         int courseIndex = getCourseIndexInCourseArrayList(courseName);
         int documentIndex = NOT_EXIST;
@@ -381,6 +419,26 @@ public class CourseAutomationSystem extends AbstractSystem{
         }
 
         return documentIndex;
+    }
+
+    /**
+     * Get Assignment Index In Document in Course ArrayList
+     *
+     * @param courseName     Course's Name
+     * @param assignmentName Assignment's Name
+     * @return               Assignment Index In Document in Course ArrayList
+     */
+    private int getAssignmentIndexInDocumentinCourseArrayList(String courseName, String assignmentName ){
+        int courseIndex = getCourseIndexInCourseArrayList(courseName);
+        int assignmentIndex = NOT_EXIST;
+
+        if(courseIndex != NOT_EXIST){
+            for(int index = 0; index < getCurrentCoursesArrayList().get(courseIndex).getAssignmentsArrayList().size();++index)
+                if(getCurrentCoursesArrayList().get(courseIndex).getAssignmentsArrayList().get(index).getAssignmentName().equals(assignmentIndex))
+                    assignmentIndex = index;
+        }
+
+        return assignmentIndex;
     }
 
 }
