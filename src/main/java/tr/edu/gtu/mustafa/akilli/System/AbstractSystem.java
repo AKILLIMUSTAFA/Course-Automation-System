@@ -1,6 +1,7 @@
 package tr.edu.gtu.mustafa.akilli.System;
 
 import tr.edu.gtu.mustafa.akilli.Course.CourseClass;
+import tr.edu.gtu.mustafa.akilli.Document.AbstractDocument;
 import tr.edu.gtu.mustafa.akilli.User.Administrator;
 import tr.edu.gtu.mustafa.akilli.User.Student;
 import tr.edu.gtu.mustafa.akilli.User.Teacher;
@@ -80,12 +81,12 @@ public abstract class AbstractSystem implements System{
         int courseNameAlreadyExist = ZERO;
 
         for(int j = 0; j < getCurrentCoursesArrayList().size() ;++j)
-            if(getCurrentCoursesArrayList().get(j).getCourseName() == newCourseName)
+            if(getCurrentCoursesArrayList().get(j).getCourseName().equals(newCourseName))
                 courseNameAlreadyExist = ONE;
 
         if(courseNameAlreadyExist == ZERO){
 
-            if(admin.getUsername() == adminUsername && admin.getPassword() == adminPassword){
+            if(admin.getUsername().equals(adminUsername) && admin.getPassword().equals(adminPassword)){
                 getCurrentCoursesArrayList().add(new CourseClass(newCourseName, newteacherUsername));
                 java.lang.System.out.println("Add course successful: " + newCourseName);
             }
@@ -111,9 +112,9 @@ public abstract class AbstractSystem implements System{
     public void removeCurrentCourse(String adminUsername, String adminPassword, String teacherUsername, String courseName) {
         int courseNameExist = ZERO;
 
-        if(admin.getUsername() == adminUsername && admin.getPassword() == adminPassword) {
+        if(admin.getUsername().equals(adminUsername) && admin.getPassword().equals(adminPassword)) {
             for (int j = 0; j < getCurrentCoursesArrayList().size(); ++j)
-                if (getCurrentCoursesArrayList().get(j).getCourseName() == courseName){
+                if (getCurrentCoursesArrayList().get(j).getCourseName().equals(courseName)){
                     getCurrentCoursesArrayList().remove(j);
                     getOldCoursesArrayList().add(new CourseClass(courseName, teacherUsername));
                     java.lang.System.out.println("Remove course successful: " + courseName);
@@ -168,7 +169,25 @@ public abstract class AbstractSystem implements System{
      */
     public abstract void removeTutorIntoCourse(String teacherUsername, String teacherPassword, String courseName, String tutorUsername);
 
+    /**
+     * Add Document Into Course
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @param newDocument     (AbstractDocument)new Document like Book, File, Slide, Url, Whiteboard description.
+     */
+    public abstract void addDocumentIntoCourse(String teacherUsername, String teacherPassword, String courseName, AbstractDocument newDocument);
 
+    /**
+     * Remove Document Into Course
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @param newDocument     (AbstractDocument)new Document like Book, File, Slide, Url, Whiteboard description.
+     */
+    public abstract void removeDocumentIntoCourse(String teacherUsername, String teacherPassword, String courseName, AbstractDocument newDocument);
 
     /**
      * Set OldCourses ArrayList.
@@ -208,9 +227,9 @@ public abstract class AbstractSystem implements System{
     public void addTeacher(String adminUsername, String adminPassword, String newTeacherUsername, String newTeacherPassword) {
         int existCourse=0;
 
-        if(admin.getUsername() == adminUsername && admin.getPassword() == adminPassword) {
+        if(admin.getUsername().equals(adminUsername) && admin.getPassword().equals(adminPassword)) {
             for (int j = 0; j < getTeachersArrayList().size(); ++j)
-                if (getTeachersArrayList().get(j).getUsername() == newTeacherUsername)
+                if (getTeachersArrayList().get(j).getUsername().equals(newTeacherUsername))
                     existCourse = 1;
 
             if (existCourse == 0) {
@@ -249,7 +268,7 @@ public abstract class AbstractSystem implements System{
         int existCourse=0;
 
         for(int j = 0; j < getStudentsArrayList().size() ;++j)
-            if(getStudentsArrayList().get(j).getUsername() == newStudentUsername)
+            if(getStudentsArrayList().get(j).getUsername().equals(newStudentUsername))
                 existCourse=1;
 
         if(existCourse == 0){

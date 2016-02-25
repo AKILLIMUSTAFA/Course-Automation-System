@@ -1,5 +1,6 @@
 package tr.edu.gtu.mustafa.akilli.System;
 
+import tr.edu.gtu.mustafa.akilli.Document.AbstractDocument;
 import tr.edu.gtu.mustafa.akilli.User.Student;
 
 /**
@@ -182,6 +183,68 @@ public class CourseAutomationSystem extends AbstractSystem{
     }
 
     /**
+     * Add Document Into Course
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @param newDocument     (AbstractDocument)new Document like Book, File, Slide, Url, Whiteboard description.
+     */
+    @Override
+    public void addDocumentIntoCourse(String teacherUsername, String teacherPassword, String courseName, AbstractDocument newDocument) {
+
+        int teacherIndex = getTeacherIndexInTeacherArrayList(teacherUsername, teacherPassword);
+        int courseIndex= getCourseIndexInCourseArrayList(courseName);
+        int courseDocumentAlreadyExist = getDocumentIndexInDocumentinCourseArrayList(courseName, newDocument.getDocumentName());
+
+        //if everything is fine. So add Student Into Course
+        if(teacherIndex != NOT_EXIST && courseIndex != NOT_EXIST && courseDocumentAlreadyExist == NOT_EXIST){
+            getCurrentCoursesArrayList().get(courseIndex).getDocumentsArrayList().add(newDocument);
+            java.lang.System.out.println("Add "+ newDocument.getDocumentName() + " into " + courseName + " successful");
+        }
+
+        if(teacherIndex == NOT_EXIST)
+            java.lang.System.out.println("Teacher userName or Password is invalid");
+
+        if(courseIndex == NOT_EXIST)
+            java.lang.System.out.println("Course not exist: " + courseName );
+
+        if(courseDocumentAlreadyExist != NOT_EXIST)
+            java.lang.System.out.println("Document already exist in the course: "+ newDocument.getDocumentName());
+    }
+
+    /**
+     * Remove Document Into Course
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @param newDocument     (AbstractDocument)new Document like Book, File, Slide, Url, Whiteboard description.
+     */
+    @Override
+    public void removeDocumentIntoCourse(String teacherUsername, String teacherPassword, String courseName, AbstractDocument newDocument) {
+
+        int teacherIndex = getTeacherIndexInTeacherArrayList(teacherUsername, teacherPassword);
+        int courseIndex= getCourseIndexInCourseArrayList(courseName);
+        int courseDocumentAlreadyExist = getDocumentIndexInDocumentinCourseArrayList(courseName, newDocument.getDocumentName());
+
+        //if everything is fine. So add Student Into Course
+        if(teacherIndex != NOT_EXIST && courseIndex != NOT_EXIST && courseDocumentAlreadyExist != NOT_EXIST){
+            getCurrentCoursesArrayList().get(courseIndex).getDocumentsArrayList().remove(newDocument);
+            java.lang.System.out.println("Remove "+ newDocument.getDocumentName() + " into " + courseName + " successful");
+        }
+
+        if(teacherIndex == NOT_EXIST)
+            java.lang.System.out.println("Teacher userName or Password is invalid");
+
+        if(courseIndex == NOT_EXIST)
+            java.lang.System.out.println("Course not exist: " + courseName );
+
+        if(courseDocumentAlreadyExist == NOT_EXIST)
+            java.lang.System.out.println("Document not exist in the course: "+ newDocument.getDocumentName());
+    }
+
+    /**
      * Get Course Index In Course ArrayList
      *
      * @param courseName Course's Name
@@ -279,7 +342,7 @@ public class CourseAutomationSystem extends AbstractSystem{
 
         if(courseIndex != NOT_EXIST){
             for(int index = 0; index < getCurrentCoursesArrayList().get(courseIndex).getStudentsArrayList().size() ;++index)
-                if(getCurrentCoursesArrayList().get(courseIndex).getStudentsArrayList().get(index).getUsername() == studentUsername)
+                if(getCurrentCoursesArrayList().get(courseIndex).getStudentsArrayList().get(index).getUsername().equals(studentUsername))
                     studentIndex = index;
         }
 
@@ -305,6 +368,19 @@ public class CourseAutomationSystem extends AbstractSystem{
         }
 
         return tutorIndex;
+    }
+
+    private int getDocumentIndexInDocumentinCourseArrayList(String courseName, String documentName){
+        int courseIndex = getCourseIndexInCourseArrayList(courseName);
+        int documentIndex = NOT_EXIST;
+
+        if(courseIndex != NOT_EXIST){
+            for(int index = 0; index < getCurrentCoursesArrayList().get(courseIndex).getDocumentsArrayList().size();++index)
+                if(getCurrentCoursesArrayList().get(courseIndex).getDocumentsArrayList().get(index).getDocumentName().equals(documentName))
+                    documentIndex = index;
+        }
+
+        return documentIndex;
     }
 
 }
