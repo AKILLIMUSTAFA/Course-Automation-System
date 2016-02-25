@@ -37,11 +37,24 @@ public interface System {
     void setCurrentCoursesArrayList();
 
     /**
-     * Get CurrentCourses ArrayList
+     * Get Current Course for Teacher
      *
-     * @return CurrentCourses ArrayList in the System
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @return Current Course
      */
-    ArrayList<CourseClass> getCurrentCoursesArrayList();
+    CourseClass getCurrentCourseforTeacher(String teacherUsername, String teacherPassword, String courseName);
+
+    /**
+     * Get Current Course for Tutor
+     *
+     * @param tutorUsername Tutor's Username
+     * @param tutorPassword Tutor's Password
+     * @param courseName    Course's Name
+     * @return Current Course
+     */
+    CourseClass getCurrentCourseforTutor(String tutorUsername, String tutorPassword, String courseName);
 
     /**
      *
@@ -144,24 +157,21 @@ public interface System {
     void setOldCoursesArrayList();
 
     /**
-     * Get OldCourses ArrayList for Teacher
+     * Print OldCourses ArrayList for Teacher
      *
      * @param teacherUsername Teacher Username
      * @param teacherPassword Teacher Password
-     * @param oldCourseName   OldCourses's Name
      * @return                OldCourses ArrayList in the System
      */
-    ArrayList<CourseClass> getOldCoursesArrayListforTeacher(String teacherUsername, String teacherPassword);
+    void printOldCoursesArrayListforTeacher(String teacherUsername, String teacherPassword);
 
     /**
-     * Get OldCourse for Tutor
+     * Print OldCourse for Tutor
      *
      * @param tutorUsername Tutor Username
      * @param tutorPassword Tutor Password
-     * @param oldCourseName OldCourses's Name
-     * @return              OldCourses ArrayList in the System
      */
-    CourseClass getOldCourseforTutor(String tutorUsername, String tutorPassword, String oldCourseName);
+    void printOldCourseforTutor(String tutorUsername, String tutorPassword);
 
     /**
      * Set Teachers ArrayList.

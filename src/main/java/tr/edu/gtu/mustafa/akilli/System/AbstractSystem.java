@@ -66,7 +66,27 @@ public abstract class AbstractSystem implements System{
      *
      * @return CurrentCourses ArrayList in the System
      */
-    public ArrayList<CourseClass> getCurrentCoursesArrayList() {return currentCoursesArrayList;}
+    protected ArrayList<CourseClass> getCurrentCoursesArrayList() {return currentCoursesArrayList;}
+
+    /**
+     * Get Current Course for Teacher
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @return Current Course
+     */
+    public abstract CourseClass getCurrentCourseforTeacher(String teacherUsername, String teacherPassword, String courseName);
+
+    /**
+     * Get Current Course for Tutor
+     *
+     * @param tutorUsername Tutor's Username
+     * @param tutorPassword Tutor's Password
+     * @param courseName    Course's Name
+     * @return Current Course
+     */
+    public abstract CourseClass getCurrentCourseforTutor(String tutorUsername, String tutorPassword, String courseName);
 
     /**
      * Only Teacher can add CurrentCourses to System.
@@ -214,23 +234,20 @@ public abstract class AbstractSystem implements System{
     protected ArrayList<CourseClass> getOldCoursesArrayList(){return oldCoursesArrayList;}
 
     /**
-     * Get OldCourses ArrayList for Teacher
+     * Print OldCourses ArrayList for Teacher
      *
      * @param teacherUsername Teacher Username
      * @param teacherPassword Teacher Password
-     * @return                OldCourses ArrayList in the System
      */
-    public abstract ArrayList<CourseClass> getOldCoursesArrayListforTeacher(String teacherUsername, String teacherPassword);
+    public abstract void printOldCoursesArrayListforTeacher(String teacherUsername, String teacherPassword);
 
     /**
-     * Get OldCourse for Tutor
+     * Print OldCourse for Tutor
      *
      * @param tutorUsername Tutor's Username
      * @param tutorPassword Tutor's Password
-     * @param courseName    Course's Name
-     * @return OldCourses ArrayList in the System
      */
-    public abstract CourseClass getOldCourseforTutor(String tutorUsername, String tutorPassword, String courseName) ;
+    public abstract void printOldCourseforTutor(String tutorUsername, String tutorPassword) ;
 
     /**
      * Set Teachers ArrayList.

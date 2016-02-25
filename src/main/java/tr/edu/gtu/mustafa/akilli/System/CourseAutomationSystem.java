@@ -38,6 +38,66 @@ public class CourseAutomationSystem extends AbstractSystem{
     }
 
     /**
+     * Get Current Course for Teacher
+     *
+     * @param teacherUsername Teacher's Username
+     * @param teacherPassword Teacher's Password
+     * @param courseName      Course's Name
+     * @return Current Course
+     */
+    @Override
+    public CourseClass getCurrentCourseforTeacher(String teacherUsername, String teacherPassword, String courseName) {
+
+        int teacherIndex = getTeacherIndexInTeacherArrayList(teacherUsername, teacherPassword);
+        int courseIndex= getCourseIndexInCourseArrayList(courseName);
+
+        if(teacherIndex != NOT_EXIST && courseIndex != NOT_EXIST)
+            return getCurrentCoursesArrayList().get(courseIndex);
+
+        if(teacherIndex == NOT_EXIST)
+            java.lang.System.out.println("Teacher userName or Password is invalid");
+
+        if(courseIndex == NOT_EXIST)
+            java.lang.System.out.println("Course not exist: " + courseName );
+
+        return null;
+    }
+
+    /**
+     * Get Current Course for Tutor
+     *
+     * @param tutorUsername Tutor's Username
+     * @param tutorPassword Tutor's Password
+     * @param courseName    Course's Name
+     * @return Current Course
+     */
+    @Override
+    public CourseClass getCurrentCourseforTutor(String tutorUsername, String tutorPassword, String courseName) {
+
+        int tutorIndex = getStudentIndexInStudentArrayList(tutorUsername, tutorPassword);
+        int courseIndex= getCourseIndexInCourseArrayList(courseName);
+        int isStudentTutorThisCourse = NOT_EXIST;
+
+        if(tutorIndex != NOT_EXIST && courseIndex != NOT_EXIST){
+            for(int i = 0; i < getCurrentCoursesArrayList().get(courseIndex).getTutorsArrayList().size() ;++i)
+                if(getCurrentCoursesArrayList().get(courseIndex).getTutorsArrayList().get(i).getUsername() == tutorUsername){
+                    return getCurrentCoursesArrayList().get(courseIndex);
+                }
+        }
+
+        if(tutorIndex == NOT_EXIST)
+            java.lang.System.out.println("Tutor not exist.");
+
+        if(courseIndex == NOT_EXIST)
+            java.lang.System.out.println("Course not exist: " + courseName );
+
+        if(isStudentTutorThisCourse == NOT_EXIST)
+            java.lang.System.out.println("Student not tutor this course.");
+
+        return null;
+    }
+
+    /**
      * Only Teacher can add Student into Course.
      *
      * @param teacherUsername Teacher Username
@@ -279,47 +339,46 @@ public class CourseAutomationSystem extends AbstractSystem{
     }
 
     /**
-     * Get OldCourses ArrayList for Teacher
+     * Print OldCourses ArrayList for Teacher
      *
      * @param teacherUsername Teacher Username
      * @param teacherPassword Teacher Password
-     * @return OldCourses ArrayList in the System
      */
     @Override
-    public ArrayList<CourseClass> getOldCoursesArrayListforTeacher(String teacherUsername, String teacherPassword) {
+    public void printOldCoursesArrayListforTeacher(String teacherUsername, String teacherPassword) {
 
         int teacherIndex = getTeacherIndexInTeacherArrayList(teacherUsername, teacherPassword);
 
-        if(teacherIndex != NOT_EXIST)
-            return getOldCoursesArrayList();
+        if(teacherIndex != NOT_EXIST){
+            for(int index = 0; index < getOldCoursesArrayList().size() ;++index)
+                java.lang.System.out.println("Old Course Name: " + getOldCoursesArrayList().get(index).getCourseName());
+        }
 
         else
             java.lang.System.out.println("Teacher userName or Password is invalid");
-
-        return null;
     }
 
     /**
-     * Get OldCourse for Tutor
+     * Print OldCourse for Tutor
      *
      * @param tutorUsername Tutor's Username
      * @param tutorPassword Tutor's Password
-     * @param courseName    Course's Name
-     * @return OldCourses ArrayList in the System
      */
     @Override
-    public CourseClass getOldCourseforTutor(String tutorUsername, String tutorPassword, String courseName) {
+    public void printOldCourseforTutor(String tutorUsername, String tutorPassword) {
 
-        int courseIndex= getCourseIndexInCourseArrayList(courseName);
-        int courseTutorExist = getTutorIndexInTutorCourseArrayList(courseName, tutorUsername);
+        int TutorExist = NOT_EXIST;
 
-        if(courseTutorExist != NOT_EXIST)
-            return getOldCoursesArrayList().get(courseIndex);
+        for(int index = 0; index < getOldCoursesArrayList().size() ;++index){
+            for(int i = 0; i < getOldCoursesArrayList().get(index).getTutorsArrayList().size() ;++i)
+                if(getOldCoursesArrayList().get(index).getTutorsArrayList().get(i).getUsername() == tutorUsername){
+                    java.lang.System.out.println("Old Course Name: " + getOldCoursesArrayList().get(index).getCourseName());
+                    TutorExist = ONE;
+                }
+        }
 
-        else
-            java.lang.System.out.println("Tutor userName or Password is invalid or This student not Tutor this course");
-
-        return null;
+        if(TutorExist == NOT_EXIST)
+            java.lang.System.out.println("Tutor userName or Password is invalid or This student not Tutor any course");
     }
 
     /**
