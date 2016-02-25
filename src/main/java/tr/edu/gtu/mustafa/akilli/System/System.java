@@ -144,11 +144,24 @@ public interface System {
     void setOldCoursesArrayList();
 
     /**
-     * Get OldCourses ArrayList
+     * Get OldCourses ArrayList for Teacher
      *
-     * @return OldCourses ArrayList in the System
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @param oldCourseName   OldCourses's Name
+     * @return                OldCourses ArrayList in the System
      */
-    ArrayList<CourseClass> getOldCoursesArrayList();
+    ArrayList<CourseClass> getOldCoursesArrayListforTeacher(String teacherUsername, String teacherPassword);
+
+    /**
+     * Get OldCourse for Tutor
+     *
+     * @param tutorUsername Tutor Username
+     * @param tutorPassword Tutor Password
+     * @param oldCourseName OldCourses's Name
+     * @return              OldCourses ArrayList in the System
+     */
+    CourseClass getOldCourseforTutor(String tutorUsername, String tutorPassword, String oldCourseName);
 
     /**
      * Set Teachers ArrayList.

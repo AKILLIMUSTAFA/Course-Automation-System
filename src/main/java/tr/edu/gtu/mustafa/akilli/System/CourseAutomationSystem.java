@@ -1,8 +1,11 @@
 package tr.edu.gtu.mustafa.akilli.System;
 
 import tr.edu.gtu.mustafa.akilli.Assignment.AbstractAssignment;
+import tr.edu.gtu.mustafa.akilli.Course.CourseClass;
 import tr.edu.gtu.mustafa.akilli.Document.AbstractDocument;
 import tr.edu.gtu.mustafa.akilli.User.Student;
+
+import java.util.ArrayList;
 
 /**
  * HW01_131044017_Mustafa_Akilli
@@ -276,6 +279,50 @@ public class CourseAutomationSystem extends AbstractSystem{
     }
 
     /**
+     * Get OldCourses ArrayList for Teacher
+     *
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @return OldCourses ArrayList in the System
+     */
+    @Override
+    public ArrayList<CourseClass> getOldCoursesArrayListforTeacher(String teacherUsername, String teacherPassword) {
+
+        int teacherIndex = getTeacherIndexInTeacherArrayList(teacherUsername, teacherPassword);
+
+        if(teacherIndex != NOT_EXIST)
+            return getOldCoursesArrayList();
+
+        else
+            java.lang.System.out.println("Teacher userName or Password is invalid");
+
+        return null;
+    }
+
+    /**
+     * Get OldCourse for Tutor
+     *
+     * @param tutorUsername Tutor's Username
+     * @param tutorPassword Tutor's Password
+     * @param courseName    Course's Name
+     * @return OldCourses ArrayList in the System
+     */
+    @Override
+    public CourseClass getOldCourseforTutor(String tutorUsername, String tutorPassword, String courseName) {
+
+        int courseIndex= getCourseIndexInCourseArrayList(courseName);
+        int courseTutorExist = getTutorIndexInTutorCourseArrayList(courseName, tutorUsername);
+
+        if(courseTutorExist != NOT_EXIST)
+            return getOldCoursesArrayList().get(courseIndex);
+
+        else
+            java.lang.System.out.println("Tutor userName or Password is invalid or This student not Tutor this course");
+
+        return null;
+    }
+
+    /**
      * Get Course Index In Course ArrayList
      *
      * @param courseName Course's Name
@@ -289,6 +336,22 @@ public class CourseAutomationSystem extends AbstractSystem{
                 courseIndex = index;
 
         return courseIndex;
+    }
+
+    /**
+     * Get OldCourse Index In OldCourse ArrayList
+     *
+     * @param courseName Course's Name
+     * @return OldCourse Index In OldCourse ArrayList
+     */
+    private int getOldCourseIndexInOldCourseArrayList(String courseName){
+        int oldCourseIndex = NOT_EXIST;
+
+        for(int index = 0; index < getOldCoursesArrayList().size() ;++index)
+            if(getOldCoursesArrayList().get(index).getCourseName() == courseName)
+                oldCourseIndex = index;
+
+        return oldCourseIndex;
     }
 
     /**

@@ -209,9 +209,28 @@ public abstract class AbstractSystem implements System{
     /**
      * Get OldCourses ArrayList
      *
+     * @return OldCourses ArrayList
+     */
+    protected ArrayList<CourseClass> getOldCoursesArrayList(){return oldCoursesArrayList;}
+
+    /**
+     * Get OldCourses ArrayList for Teacher
+     *
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @return                OldCourses ArrayList in the System
+     */
+    public abstract ArrayList<CourseClass> getOldCoursesArrayListforTeacher(String teacherUsername, String teacherPassword);
+
+    /**
+     * Get OldCourse for Tutor
+     *
+     * @param tutorUsername Tutor's Username
+     * @param tutorPassword Tutor's Password
+     * @param courseName    Course's Name
      * @return OldCourses ArrayList in the System
      */
-    public ArrayList<CourseClass> getOldCoursesArrayList() {return oldCoursesArrayList;}
+    public abstract CourseClass getOldCourseforTutor(String tutorUsername, String tutorPassword, String courseName) ;
 
     /**
      * Set Teachers ArrayList.
