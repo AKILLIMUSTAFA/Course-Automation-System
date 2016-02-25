@@ -66,6 +66,46 @@ public interface System {
     void removeCurrentCourse(String adminUsername, String adminPassword, String teacherUsername, String courseName);
 
     /**
+     * Only Teacher can add Student into Course.
+     *
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @param courseName      Course Name
+     * @param studentUsername will add into course
+     */
+    void addStudentIntoCourse(String teacherUsername, String teacherPassword, String courseName, String studentUsername);
+
+    /**
+     * Only Teacher can remove Student into Course.
+     *
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @param courseName      Course Name
+     * @param studentUsername will remove into course
+     */
+    void removeStudentIntoCourse(String teacherUsername, String teacherPassword, String courseName, String studentUsername);
+
+    /**
+     * Add Tutor Into Course
+     *
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @param courseName      Course Name
+     * @param tutorUsername   will add into course
+     */
+    void addTutorIntoCourse(String teacherUsername, String teacherPassword, String courseName, String tutorUsername);
+
+    /**
+     * Remove Tutor Into Course
+     *
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @param courseName      Course Name
+     * @param tutorUsername   will remove into course
+     */
+    void removeTutorIntoCourse(String teacherUsername, String teacherPassword, String courseName, String tutorUsername);
+
+    /**
      * Set OldCourses ArrayList.
      * İf the OldCourses ArrayList already set, then OldCourses ArrayList reset.
      */

@@ -109,7 +109,7 @@ public abstract class AbstractSystem implements System{
      * @param courseName    The name of the course to be remove
      */
     public void removeCurrentCourse(String adminUsername, String adminPassword, String teacherUsername, String courseName) {
-        int courseNameExist = 0;
+        int courseNameExist = ZERO;
 
         if(admin.getUsername() == adminUsername && admin.getPassword() == adminPassword) {
             for (int j = 0; j < getCurrentCoursesArrayList().size(); ++j)
@@ -117,16 +117,58 @@ public abstract class AbstractSystem implements System{
                     getCurrentCoursesArrayList().remove(j);
                     getOldCoursesArrayList().add(new CourseClass(courseName, teacherUsername));
                     java.lang.System.out.println("Remove course successful: " + courseName);
-                    courseNameExist = 1;
+                    courseNameExist = ONE;
                 }
 
-            if(courseNameExist == 0)
+            if(courseNameExist == ZERO)
                 java.lang.System.out.println("Course Name not exist: "+ courseName);
         }
         else
             java.lang.System.out.println("Admin userName or Password is invalid: ");
 
     }
+
+    /**
+     * Only Teacher can add Student into Course.
+     *
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @param courseName      Course Name
+     * @param studentUsername will add into course
+     */
+    public abstract void addStudentIntoCourse(String teacherUsername, String teacherPassword, String courseName, String studentUsername);
+
+    /**
+     * Only Teacher can remove Student into Course.
+     *
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @param courseName      Course Name
+     * @param studentUsername will remove into course
+     */
+    public abstract void removeStudentIntoCourse(String teacherUsername, String teacherPassword, String courseName, String studentUsername);
+
+    /**
+     * Add Tutor Into Course
+     *
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @param courseName      Course Name
+     * @param tutorUsername   will add into course
+     */
+    public abstract void addTutorIntoCourse(String teacherUsername, String teacherPassword, String courseName, String tutorUsername);
+
+    /**
+     * Remove Tutor Into Course
+     *
+     * @param teacherUsername Teacher Username
+     * @param teacherPassword Teacher Password
+     * @param courseName      Course Name
+     * @param tutorUsername   will remove into course
+     */
+    public abstract void removeTutorIntoCourse(String teacherUsername, String teacherPassword, String courseName, String tutorUsername);
+
+
 
     /**
      * Set OldCourses ArrayList.

@@ -2,6 +2,8 @@ package tr.edu.gtu.mustafa.akilli.Course;
 
 import tr.edu.gtu.mustafa.akilli.Assignment.AbstractAssignment;
 import tr.edu.gtu.mustafa.akilli.Document.AbstractDocument;
+import tr.edu.gtu.mustafa.akilli.User.Student;
+
 import java.util.ArrayList;
 
 /**
@@ -47,6 +49,32 @@ public interface Course {
     String getCourseTeacherName();
 
     /**
+     * Set Students ArrayList.
+     * İf the Students ArrayList already set, then Students ArrayList reset.
+     */
+    void setStudentsArrayList();
+
+    /**
+     * Get Students ArrayList
+     *
+     * @return Students ArrayList in the Course.
+     */
+    ArrayList<Student> getStudentsArrayList();
+
+    /**
+     * Set Tutors ArrayList.
+     * İf the Tutors ArrayList already set, then Tutors ArrayList reset.
+     */
+    void setTutorsArrayList();
+
+    /**
+     * Get Tutors ArrayList
+     *
+     * @return Tutors ArrayList in the Course.
+     */
+    ArrayList<Student> getTutorsArrayList();
+
+    /**
      * Set Documents ArrayList.
      * İf the Documents ArrayList already set, then Documents ArrayList reset.
      */
@@ -55,7 +83,7 @@ public interface Course {
     /**
      * Get Documents ArrayList
      *
-     * @return Documents ArrayList in the System
+     * @return Documents ArrayList in the Course
      */
     ArrayList<AbstractDocument> getDocumentsArrayList();
 
@@ -68,7 +96,7 @@ public interface Course {
     /**
      * Get Assignments ArrayList
      *
-     * @return Assignments ArrayList in the System
+     * @return Assignments ArrayList in the Course
      */
     ArrayList<AbstractAssignment> getAssignmentsArrayList();
 
