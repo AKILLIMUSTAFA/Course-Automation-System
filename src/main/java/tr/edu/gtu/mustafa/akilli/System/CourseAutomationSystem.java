@@ -21,7 +21,6 @@ import java.util.ArrayList;
  */
 public class CourseAutomationSystem extends AbstractSystem{
 
-    private static final int ZERO = 0;/*ZERO*/
     private static final int ONE = 1; /*ONE */
     private static final int NOT_EXIST = -1; /*ONE */
 
@@ -80,7 +79,7 @@ public class CourseAutomationSystem extends AbstractSystem{
 
         if(tutorIndex != NOT_EXIST && courseIndex != NOT_EXIST){
             for(int i = 0; i < getCurrentCoursesArrayList().get(courseIndex).getTutorsArrayList().size() ;++i)
-                if(getCurrentCoursesArrayList().get(courseIndex).getTutorsArrayList().get(i).getUsername() == tutorUsername){
+                if(getCurrentCoursesArrayList().get(courseIndex).getTutorsArrayList().get(i).getUsername().equals(tutorUsername)){
                     return getCurrentCoursesArrayList().get(courseIndex);
                 }
         }
@@ -371,7 +370,7 @@ public class CourseAutomationSystem extends AbstractSystem{
 
         for(int index = 0; index < getOldCoursesArrayList().size() ;++index){
             for(int i = 0; i < getOldCoursesArrayList().get(index).getTutorsArrayList().size() ;++i)
-                if(getOldCoursesArrayList().get(index).getTutorsArrayList().get(i).getUsername() == tutorUsername){
+                if(getOldCoursesArrayList().get(index).getTutorsArrayList().get(i).getUsername().equals(tutorUsername)){
                     java.lang.System.out.println("Old Course Name: " + getOldCoursesArrayList().get(index).getCourseName());
                     TutorExist = ONE;
                 }
@@ -429,7 +428,7 @@ public class CourseAutomationSystem extends AbstractSystem{
 
         if(studentIndex != NOT_EXIST && courseIndex != NOT_EXIST && studentInCourse!=NOT_EXIST)
             for(int index = 0; index < getCurrentCoursesArrayList().get(courseIndex).getDocumentsArrayList().size(); ++index)
-                getCurrentCoursesArrayList().get(courseIndex).getDocumentsArrayList().get(index).getDocumentName();
+                java.lang.System.out.println(getCurrentCoursesArrayList().get(courseIndex).getDocumentsArrayList().get(index).getDocumentName() );
 
         if(studentIndex == NOT_EXIST)
             java.lang.System.out.println("Tutor not exist.");
@@ -451,7 +450,7 @@ public class CourseAutomationSystem extends AbstractSystem{
         int courseIndex = NOT_EXIST;
 
         for(int index = 0; index < getCurrentCoursesArrayList().size() ;++index)
-            if(getCurrentCoursesArrayList().get(index).getCourseName() == courseName)
+            if(getCurrentCoursesArrayList().get(index).getCourseName().equals(courseName))
                 courseIndex = index;
 
         return courseIndex;
@@ -467,7 +466,7 @@ public class CourseAutomationSystem extends AbstractSystem{
         int oldCourseIndex = NOT_EXIST;
 
         for(int index = 0; index < getOldCoursesArrayList().size() ;++index)
-            if(getOldCoursesArrayList().get(index).getCourseName() == courseName)
+            if(getOldCoursesArrayList().get(index).getCourseName().equals(courseName))
                 oldCourseIndex = index;
 
         return oldCourseIndex;
@@ -484,8 +483,8 @@ public class CourseAutomationSystem extends AbstractSystem{
         int teacherIndex = NOT_EXIST;
 
         for(int index = 0; index < getTeachersArrayList().size() ;++index)
-            if(getTeachersArrayList().get(index).getUsername() == teacherUsername &&
-                    getTeachersArrayList().get(index).getPassword() == teacherPassword)
+            if(getTeachersArrayList().get(index).getUsername().equals(teacherUsername) &&
+                    getTeachersArrayList().get(index).getPassword().equals(teacherPassword))
                 teacherIndex = index;
 
         return teacherIndex;
@@ -501,7 +500,7 @@ public class CourseAutomationSystem extends AbstractSystem{
         int teacherIndex = NOT_EXIST;
 
         for(int index = 0; index < getTeachersArrayList().size() ;++index)
-            if(getTeachersArrayList().get(index).getUsername() == teacherUsername)
+            if(getTeachersArrayList().get(index).getUsername().equals(teacherUsername))
                 teacherIndex = index;
 
         return teacherIndex;
@@ -517,7 +516,7 @@ public class CourseAutomationSystem extends AbstractSystem{
         int studentIndex = NOT_EXIST;
 
         for(int index = 0; index < getStudentsArrayList().size() ;++index)
-            if(getStudentsArrayList().get(index).getUsername() == studentUsername)
+            if(getStudentsArrayList().get(index).getUsername().equals(studentUsername))
                 studentIndex = index;
 
         return studentIndex;
@@ -534,8 +533,8 @@ public class CourseAutomationSystem extends AbstractSystem{
         int studentIndex = NOT_EXIST;
 
         for(int index = 0; index < getStudentsArrayList().size() ;++index)
-            if(getStudentsArrayList().get(index).getUsername() == studentUsername &&
-                    getStudentsArrayList().get(index).getPassword() == studentPassword)
+            if(getStudentsArrayList().get(index).getUsername().equals(studentUsername) &&
+                    getStudentsArrayList().get(index).getPassword().equals(studentPassword))
                 studentIndex = index;
 
         return studentIndex;
@@ -575,9 +574,12 @@ public class CourseAutomationSystem extends AbstractSystem{
         int tutorIndex = NOT_EXIST;
 
         if(courseIndex != NOT_EXIST){
-            for(int index = 0; index < getCurrentCoursesArrayList().get(courseIndex).getStudentsArrayList().size() ;++index)
-                if(getCurrentCoursesArrayList().get(courseIndex).getTutorsArrayList().get(index).getUsername() == tutorUsername)
-                    tutorIndex = index;
+            try{
+                for(int index = 0; index < getCurrentCoursesArrayList().get(courseIndex).getStudentsArrayList().size() ;++index)
+                    if(getCurrentCoursesArrayList().get(courseIndex).getTutorsArrayList().get(index).getUsername().equals(tutorUsername))
+                        tutorIndex = index;
+            }
+            catch (Exception e){}
         }
 
         return tutorIndex;
