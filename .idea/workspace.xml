@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestScenario.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestScenario.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/cse222/TestScenario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+            <state vertical-scroll-proportion="-10.545455">
+              <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,61 +34,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseAutomationSystem.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java">
+      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6894865">
-              <caret line="549" column="0" selection-start-line="549" selection-start-column="0" selection-end-line="549" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.0">
+              <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+              <folding>
+                <element signature="docComment;method#getAdministrator#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#setCurrentCoursesArrayList#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#getCurrentCourseforTeacher#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#getCurrentCourseforTutor#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#addCurrentCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#removeCurrentCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#addStudentIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#removeStudentIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#addTutorIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#removeTutorIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#addDocumentIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#removeDocumentIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#addAssignmentIntoCourse#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#setOldCoursesArrayList#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#printOldCoursesArrayListforTeacher#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#printOldCourseforTutor#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#setTeachersArrayList#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#getTeachersArrayList#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#addTeacher#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#setStudentsArrayList#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#getStudentsArrayList#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#studentUploadAssignment#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#studentGrade#0;class#System#0" expanded="false" />
+                <element signature="docComment;method#studentLectureNote#0;class#System#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractSystem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="294" column="4" selection-start-line="294" selection-start-column="4" selection-end-line="294" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;method#CourseAutomationSystem#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#CourseAutomationSystem#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getCurrentCourseforTeacher#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getCurrentCourseforTeacher#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getCurrentCourseforTutor#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getCurrentCourseforTutor#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#addStudentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#addStudentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#removeStudentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#removeStudentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#addTutorIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#addTutorIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#removeTutorIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#removeTutorIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#addDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#addDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#removeDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#removeDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#addAssignmentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#addAssignmentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#printOldCoursesArrayListforTeacher#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#printOldCoursesArrayListforTeacher#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#printOldCourseforTutor#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#printOldCourseforTutor#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#studentGrade#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#studentGrade#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#studentLectureNote#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#studentLectureNote#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getCourseIndexInCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getCourseIndexInCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getOldCourseIndexInOldCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getOldCourseIndexInOldCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getTeacherIndexInTeacherArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getTeacherIndexInTeacherArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getTeacherIndexInTeacherArrayList#1;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getTeacherIndexInTeacherArrayList#1;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getStudentIndexInStudentArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getStudentIndexInStudentArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getStudentIndexInStudentArrayList#1;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getStudentIndexInStudentArrayList#1;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getStudentIndexInStudentCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getStudentIndexInStudentCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getTutorIndexInTutorCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getTutorIndexInTutorCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getDocumentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getDocumentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="docComment;method#getAssignmentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
-                <element signature="method#getAssignmentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
+                <element signature="docComment;method#AbstractSystem#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#getAdministrator#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#setCurrentCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#getCurrentCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#getCurrentCourseforTeacher#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#getCurrentCourseforTutor#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#addCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="method#addCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#removeCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="method#removeCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#addStudentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#removeStudentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#addTutorIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#removeTutorIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#addDocumentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#removeDocumentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#addAssignmentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#setOldCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#getOldCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#printOldCoursesArrayListforTeacher#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#printOldCourseforTutor#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#setTeachersArrayList#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#getTeachersArrayList#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#addTeacher#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="method#addTeacher#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#removeTeacher#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="method#removeTeacher#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#setStudentsArrayList#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#getStudentsArrayList#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#studentRegister#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="method#studentRegister#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#studentUploadAssignment#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#studentGrade#0;class#AbstractSystem#0" expanded="false" />
+                <element signature="docComment;method#studentLectureNote#0;class#AbstractSystem#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -139,11 +160,11 @@
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Course/CourseClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Course/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/Course/AbstractCourse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java" />
         <option value="$PROJECT_DIR$/src/test/java/tr/edu/gtu/mustafa/akilli/cse222/CourseAutomationSystemUnitTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/cse222/TestScenario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/cse222/TestScenario.java" />
       </list>
     </option>
   </component>
@@ -788,7 +809,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6888388" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973205" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -1065,81 +1086,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61358315">
-          <caret line="228" column="59" selection-start-line="228" selection-start-column="59" selection-end-line="228" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;method#setCurrentCoursesArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#removeCurrentCourse#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#addStudentIntoCourse#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#removeStudentIntoCourse#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#addDocumentIntoCourse#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#removeDocumentIntoCourse#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#addAssignmentIntoCourse#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#printOldCoursesArrayListforTeacher#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#printOldCourseforTutor#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#setTeachersArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#getTeachersArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#addTeacher#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#setStudentsArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#getStudentsArrayList#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#studentRegister#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#studentUploadAssignment#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#studentGrade#0;class#System#0" expanded="false" />
-            <element signature="docComment;method#studentLectureNote#0;class#System#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tr/edu/gtu/mustafa/akilli/cse222/CourseAutomationSystemUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23185012">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5357625">
-          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#AbstractSystem#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#getAdministrator#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#setCurrentCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#getCurrentCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#getCurrentCourseforTeacher#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#getCurrentCourseforTutor#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#addCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="method#addCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#removeCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="method#removeCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#addStudentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#removeStudentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#addTutorIntoCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#removeTutorIntoCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#addDocumentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#removeDocumentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#addAssignmentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#setOldCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#getOldCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#printOldCoursesArrayListforTeacher#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#printOldCourseforTutor#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#setTeachersArrayList#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#getTeachersArrayList#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#addTeacher#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="method#addTeacher#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#setStudentsArrayList#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#getStudentsArrayList#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#studentRegister#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="method#studentRegister#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#studentUploadAssignment#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#studentGrade#0;class#AbstractSystem#0" expanded="false" />
-            <element signature="docComment;method#studentLectureNote#0;class#AbstractSystem#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1167,20 +1118,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/cse222/TestScenario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/CourseAutomationSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6894865">
-          <caret line="549" column="0" selection-start-line="549" selection-start-column="0" selection-end-line="549" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.48711944">
+          <caret line="189" column="96" selection-start-line="189" selection-start-column="96" selection-end-line="189" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#CourseAutomationSystem#0;class#CourseAutomationSystem#0" expanded="false" />
@@ -1194,7 +1135,6 @@
             <element signature="docComment;method#removeStudentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="method#removeStudentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#addTutorIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
-            <element signature="method#addTutorIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#removeTutorIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="method#removeTutorIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#addDocumentIntoCourse#0;class#CourseAutomationSystem#0" expanded="false" />
@@ -1206,7 +1146,6 @@
             <element signature="docComment;method#printOldCoursesArrayListforTeacher#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="method#printOldCoursesArrayListforTeacher#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#printOldCourseforTutor#0;class#CourseAutomationSystem#0" expanded="false" />
-            <element signature="method#printOldCourseforTutor#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#studentGrade#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="method#studentGrade#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#studentLectureNote#0;class#CourseAutomationSystem#0" expanded="false" />
@@ -1231,6 +1170,93 @@
             <element signature="method#getDocumentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="docComment;method#getAssignmentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
             <element signature="method#getAssignmentIndexInDocumentinCourseArrayList#0;class#CourseAutomationSystem#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/AbstractSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="294" column="4" selection-start-line="294" selection-start-column="4" selection-end-line="294" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#AbstractSystem#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#getAdministrator#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#setCurrentCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#getCurrentCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#getCurrentCourseforTeacher#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#getCurrentCourseforTutor#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#addCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="method#addCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#removeCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="method#removeCurrentCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#addStudentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#removeStudentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#addTutorIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#removeTutorIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#addDocumentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#removeDocumentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#addAssignmentIntoCourse#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#setOldCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#getOldCoursesArrayList#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#printOldCoursesArrayListforTeacher#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#printOldCourseforTutor#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#setTeachersArrayList#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#getTeachersArrayList#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#addTeacher#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="method#addTeacher#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#removeTeacher#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="method#removeTeacher#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#setStudentsArrayList#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#getStudentsArrayList#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#studentRegister#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="method#studentRegister#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#studentUploadAssignment#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#studentGrade#0;class#AbstractSystem#0" expanded="false" />
+            <element signature="docComment;method#studentLectureNote#0;class#AbstractSystem#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/System/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+          <folding>
+            <element signature="docComment;method#getAdministrator#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setCurrentCoursesArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getCurrentCourseforTeacher#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getCurrentCourseforTutor#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addCurrentCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#removeCurrentCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addStudentIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#removeStudentIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addTutorIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#removeTutorIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addDocumentIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#removeDocumentIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addAssignmentIntoCourse#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setOldCoursesArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#printOldCoursesArrayListforTeacher#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#printOldCourseforTutor#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setTeachersArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getTeachersArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#addTeacher#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#setStudentsArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#getStudentsArrayList#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#studentUploadAssignment#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#studentGrade#0;class#System#0" expanded="false" />
+            <element signature="docComment;method#studentLectureNote#0;class#System#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tr/edu/gtu/mustafa/akilli/cse222/TestScenario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.545455">
+          <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

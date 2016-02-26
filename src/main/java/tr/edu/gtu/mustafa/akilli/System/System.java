@@ -200,6 +200,16 @@ public interface System {
             String newTeacherUsername, String newTeacherPassword);
 
     /**
+     * Only Admin can remove Teacher to System.
+     * Remove element into Teacher ArrayList.
+     *
+     * @param adminUsername   Admin Username
+     * @param adminPassword   Admin Password
+     * @param teacherUsername Teacher's Username
+     */
+    void removeTeacher(String adminUsername, String adminPassword, String teacherUsername);
+
+    /**
      * Set Students ArrayList.
      * İf the Students ArrayList already set, then Students ArrayList reset.
      */

@@ -205,7 +205,7 @@ public class CourseAutomationSystem extends AbstractSystem{
             java.lang.System.out.println("Tutor already exist in the course: "+ tutorUsername);
 
         if(courseStudentAlreadyExist != NOT_EXIST)
-            java.lang.System.out.println( tutorUsername+ " already student in this course");
+            java.lang.System.out.println( tutorUsername+ " already student in this course: " + courseName);
 
     }
 

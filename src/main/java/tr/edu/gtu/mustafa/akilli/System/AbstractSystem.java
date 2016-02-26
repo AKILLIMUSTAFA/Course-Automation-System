@@ -293,6 +293,36 @@ public abstract class AbstractSystem implements System{
     }
 
     /**
+     * Only Admin can remove Teacher to System.
+     * Remove element into Teacher ArrayList.
+     *
+     * @param adminUsername   Admin Username
+     * @param adminPassword   Admin Password
+     * @param teacherUsername Teacher's Username
+     */
+    public void removeTeacher(String adminUsername, String adminPassword, String teacherUsername){
+
+        int existCourse=ZERO;
+
+        if(admin.getUsername().equals(adminUsername) && admin.getPassword().equals(adminPassword)) {
+            for (int index = 0; index < getTeachersArrayList().size(); ++index)
+                if (getTeachersArrayList().get(index).getUsername().equals(teacherUsername)){
+                    existCourse = ONE;
+                    java.lang.System.out.println("Teacher remove: " + teacherUsername);
+                    getTeachersArrayList().remove(index);
+                }
+
+            if (existCourse == ZERO)
+                java.lang.System.out.println("Teacher username not exist: " + teacherUsername);
+
+        }
+        else{
+            java.lang.System.out.println("Admin username or password is invalid");
+        }
+
+    }
+
+    /**
      * Set Students ArrayList.
      * İf the Students ArrayList already set, then Students ArrayList reset.
      */

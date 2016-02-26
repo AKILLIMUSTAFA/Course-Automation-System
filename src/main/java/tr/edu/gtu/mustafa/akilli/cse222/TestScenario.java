@@ -88,6 +88,59 @@ public class TestScenario {
         //Student lecture notes
         courseAutomationSystem.studentLectureNote("MehmetOgrenci", "777", "CSE241");
         java.lang.System.out.println("********************************************************************");
+        java.lang.System.out.println("********************************************************************");
+        java.lang.System.out.println("********************************************************************");
+        java.lang.System.out.println("********************************************************************");
+
+        //Administrators adding teacher.
+        courseAutomationSystem.addTeacher("SystemAdmin", "123" , "DurmusHoca", "1453");
+        java.lang.System.out.println("********************************************************************");
+
+        //Administrators removing users not exist
+        courseAutomationSystem.removeTeacher("SystemAdmin", "123" , "MahmutHoca");
+        java.lang.System.out.println("********************************************************************");
+
+        //Administrators wrong password
+        courseAutomationSystem.removeTeacher("SystemAdmin", "123567" , "DurmusHoca");
+        java.lang.System.out.println("********************************************************************");
+
+        //Administrators removing users.
+        courseAutomationSystem.removeTeacher("SystemAdmin", "123" , "DurmusHoca");
+        java.lang.System.out.println("********************************************************************");
+
+        //Administrators adding courses (Teachers can manage multiple course in a course term)
+        courseAutomationSystem.addCurrentCourse("SystemAdmin", "123" , "AhmetHoca", "CSE356");
+        java.lang.System.out.println("********************************************************************");
+
+
+        //Teacher adding tutors already be a student
+        courseAutomationSystem.addTutorIntoCourse("AhmetHoca", "1453", "CSE241", "MehmetOgrenci");
+        java.lang.System.out.println("********************************************************************");
+
+        //Tutors can be a student in a different course.
+        //Teacher adding tutors already be a student
+        courseAutomationSystem.addTutorIntoCourse("AhmetHoca", "1453", "CSE356", "MehmetOgrenci");
+        java.lang.System.out.println("********************************************************************");
+
+        //Administrators removing courses.
+        courseAutomationSystem.removeCurrentCourse("SystemAdmin", "123" , "AhmetHoca", "CSE356");
+        java.lang.System.out.println("********************************************************************");
+
+        //Teachers can view older courses but cannot make any changes.
+        courseAutomationSystem.printOldCoursesArrayListforTeacher("AhmetHoca", "1453");
+        java.lang.System.out.println("********************************************************************");
+
+        //Teachers removing students.
+        courseAutomationSystem.removeStudentIntoCourse("AhmetHoca", "1453","CSE241", "MehmetOgrenci");
+        java.lang.System.out.println("********************************************************************");
+
+        //Teachers removing documents.
+        courseAutomationSystem.removeDocumentIntoCourse("AhmetHoca", "1453","CSE241", new AbstractDocument("Java language Book"));
+        java.lang.System.out.println("********************************************************************");
+
+        //Teachers removing documents not exist
+        courseAutomationSystem.removeDocumentIntoCourse("AhmetHoca", "1453","CSE241", new AbstractDocument("C language Book"));
+        java.lang.System.out.println("********************************************************************");
 
     }// end method main
 
