@@ -162,7 +162,6 @@ public interface System {
      *
      * @param teacherUsername Teacher Username
      * @param teacherPassword Teacher Password
-     * @return                OldCourses ArrayList in the System
      */
     void printOldCoursesArrayListforTeacher(String teacherUsername, String teacherPassword);
 
